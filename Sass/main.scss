@@ -2,12 +2,18 @@
 @import '_theme.scss';
 
 header {
-  background-color: red;
-
+  height: 60px;
+  box-shadow: 0px 0px 5px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: auto;
+  }
 }
 
 #exploration_section {
-  background-color: blue;
+
 
 }
 

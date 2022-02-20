@@ -66,11 +66,14 @@ select {
 }
 
 header {
-  background-color: red;
+  height: 60px;
+  box-shadow: 0px 0px 5px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-#exploration_section {
-  background-color: blue;
+header img {
+  width: auto;
 }
 
 #functioning_section {
