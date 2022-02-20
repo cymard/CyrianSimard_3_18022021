@@ -1,6 +1,6 @@
 /* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 *,
 *::before,
 *::after {
@@ -65,6 +65,10 @@ select {
   padding: 0;
 }
 
+p, input {
+  font-family: "Roboto";
+}
+
 header {
   height: 60px;
   box-shadow: 0px 0px 5px gray;
@@ -74,6 +78,23 @@ header {
 }
 header img {
   width: auto;
+}
+
+#exploration_section {
+  text-align: center;
+}
+#exploration_section div:first-child {
+  background-color: #EAEAEA;
+  height: 50px;
+  line-height: 50px;
+}
+#exploration_section div:first-child i {
+  padding: 10px;
+}
+#exploration_section div:first-child input {
+  border: none;
+  background-color: #EAEAEA;
+  width: 180px;
 }
 
 #functioning_section {

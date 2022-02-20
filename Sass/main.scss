@@ -1,6 +1,10 @@
 @import '_normalizer.scss';
 @import '_theme.scss';
 
+p, input {
+  font-family: 'Roboto';
+}
+
 header {
   height: 60px;
   box-shadow: 0px 0px 5px gray;
@@ -13,8 +17,20 @@ header {
 }
 
 #exploration_section {
-
-
+  text-align: center;
+  div:first-child {
+    background-color: #EAEAEA;
+    height: 50px;
+    line-height: 50px;
+    i {
+      padding: 10px;
+    }
+    input {
+      border: none;
+      background-color: #EAEAEA;
+      width: 180px;
+    }
+  }
 }
 
 #functioning_section {
