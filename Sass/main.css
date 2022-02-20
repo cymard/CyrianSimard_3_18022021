@@ -65,4 +65,24 @@ select {
   padding: 0;
 }
 
+header {
+  background-color: red;
+}
+
+#exploration_section {
+  background-color: blue;
+}
+
+#functioning_section {
+  background-color: yellow;
+}
+
+#menus_section {
+  background-color: green;
+}
+
+footer {
+  background-color: orange;
+}
+
 /*# sourceMappingURL=main.css.map */
