@@ -5,6 +5,11 @@ p, input {
   font-family: 'Roboto';
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'roboto';
+  font-size: 20px;
+}
+
 header {
   height: 60px;
   box-shadow: 0px 0px 5px gray;
@@ -31,6 +36,9 @@ header {
       background-color: #EAEAEA;
       width: 180px;
     }
+  }
+  div:nth-child(2) {
+    background-color: #F6F6F6;
   }
 }
 

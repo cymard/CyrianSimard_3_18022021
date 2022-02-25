@@ -1,5 +1,5 @@
 /* Box sizing rules */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@50&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 *,
 *::before,
@@ -69,6 +69,11 @@ p, input {
   font-family: "Roboto";
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roboto";
+  font-size: 20px;
+}
+
 header {
   height: 60px;
   box-shadow: 0px 0px 5px gray;
@@ -96,6 +101,9 @@ header img {
   border: none;
   background-color: #EAEAEA;
   width: 180px;
+}
+#exploration_section div:nth-child(2) {
+  background-color: #F6F6F6;
 }
 
 #functioning_section {
