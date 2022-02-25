@@ -35,11 +35,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .card_info_theme {
   background-color: #F6F6F6;
-  height: 80px;
+  height: 75px;
   width: 330px;
   border-radius: 20px;
   @include flex-center-content();
-  margin: 15px;
+  margin: 25px 20px;
+  box-shadow: 0px 2px 10px #D3D3D3;
   i {
     position: absolute;
     left: 70px;
@@ -100,16 +101,13 @@ header {
 
 #functioning_section {
   padding: 50px 20px;
-
 }
 
 
 #menus_section {
   background-color: green;
-
 }
 
 footer {
   background-color: orange;
-
 }
