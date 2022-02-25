@@ -74,7 +74,7 @@ p, input {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,6 +89,34 @@ h1, h2, h3, h4, h5, h6 {
   padding: 13px 20px;
   border-radius: 30px;
   border: none;
+}
+
+.card_info_theme {
+  background-color: #F6F6F6;
+  height: 80px;
+  width: 330px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.card_info_theme i {
+  position: absolute;
+  left: 70px;
+  color: gray;
+}
+.card_info_theme:before {
+  content: "1";
+  height: 25px;
+  width: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12.5px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 25px;
 }
 
 header {
@@ -134,7 +162,7 @@ header img {
 }
 
 #functioning_section {
-  background-color: yellow;
+  padding: 50px 20px;
 }
 
 #menus_section {
