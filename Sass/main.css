@@ -1,5 +1,5 @@
 /* Box sizing rules */
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@50&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 *,
 *::before,
@@ -65,13 +65,30 @@ select {
   padding: 0;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  line-height: 30px;
+}
+
 p, input {
   font-family: "Roboto";
 }
 
+p {
+  font-size: 20px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "roboto";
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn_theme {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  padding: 13px 20px;
+  border-radius: 30px;
+  border: none;
 }
 
 header {
@@ -104,6 +121,16 @@ header img {
 }
 #exploration_section div:nth-child(2) {
   background-color: #F6F6F6;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+#exploration_section div:nth-child(2) p {
+  line-height: 20px;
+  margin: 10px 0 20px 0;
 }
 
 #functioning_section {

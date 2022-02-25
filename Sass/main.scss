@@ -1,13 +1,30 @@
 @import '_normalizer.scss';
 @import '_theme.scss';
 
+p,h1,h2,h3,h4,h5,h6 {
+  line-height: 30px;
+}
+
 p, input {
   font-family: 'Roboto';
 }
 
+p {
+  font-size: 20px;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'roboto';
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn_theme {
+  background: linear-gradient($secondary-color, $primary-color);
+  color: white;
+  padding: 13px 20px;
+  border-radius: 30px;
+  border: none;
 }
 
 header {
@@ -39,6 +56,16 @@ header {
   }
   div:nth-child(2) {
     background-color: #F6F6F6;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    p {
+      line-height: 20px;
+      margin: 10px 0 20px 0;
+    }
   }
 }
 
