@@ -92,35 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 5px 5px #D3D3D3;
 }
 
-.card_info_theme {
-  background-color: #F6F6F6;
-  height: 75px;
-  width: 330px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 25px 20px;
-  box-shadow: 0px 2px 10px #D3D3D3;
-}
-.card_info_theme i {
-  position: absolute;
-  left: 70px;
-  color: gray;
-}
-.card_info_theme:before {
-  content: "1";
-  height: 25px;
-  width: 25px;
-  background-color: #9356DC;
-  color: white;
-  border-radius: 12.5px;
-  text-align: center;
-  line-height: 25px;
-  position: absolute;
-  left: 25px;
-}
-
 header {
   height: 60px;
   box-shadow: 0px 0px 5px gray;
@@ -165,6 +136,94 @@ header img {
 
 #functioning_section {
   padding: 50px 20px;
+}
+#functioning_section li:nth-child(1) {
+  background-color: #F6F6F6;
+  height: 75px;
+  width: 330px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 20px;
+  box-shadow: 0px 2px 10px #D3D3D3;
+}
+#functioning_section li:nth-child(1) i {
+  position: absolute;
+  left: 70px;
+  color: gray;
+}
+#functioning_section li:nth-child(1):before {
+  content: "1";
+  height: 25px;
+  width: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12.5px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 25px;
+}
+#functioning_section li:nth-child(2) {
+  background-color: #F6F6F6;
+  height: 75px;
+  width: 330px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 20px;
+  box-shadow: 0px 2px 10px #D3D3D3;
+}
+#functioning_section li:nth-child(2) i {
+  position: absolute;
+  left: 70px;
+  color: gray;
+}
+#functioning_section li:nth-child(2):before {
+  content: "2";
+  height: 25px;
+  width: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12.5px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 25px;
+}
+#functioning_section li:nth-child(3) {
+  background-color: #F6F6F6;
+  height: 75px;
+  width: 330px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 20px;
+  box-shadow: 0px 2px 10px #D3D3D3;
+  background-color: #F5EDFF;
+}
+#functioning_section li:nth-child(3) i {
+  position: absolute;
+  left: 70px;
+  color: gray;
+}
+#functioning_section li:nth-child(3):before {
+  content: "3";
+  height: 25px;
+  width: 25px;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 12.5px;
+  text-align: center;
+  line-height: 25px;
+  position: absolute;
+  left: 25px;
+}
+#functioning_section li:nth-child(3) i {
+  color: #9356DC;
 }
 
 #menus_section {

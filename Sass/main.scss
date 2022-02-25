@@ -32,10 +32,9 @@ h1,h2,h3,h4,h5,h6 {
   border-radius: 30px;
   border: none;
   box-shadow: 0px 5px 5px $shadow-color;
-
 }
 
-.card_info_theme {
+@mixin card-info-theme($number: '1') {
   background-color: #F6F6F6;
   height: 75px;
   width: 330px;
@@ -49,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
     color: gray;
   }
   &:before{
-    content: '1';
+    content: $number;
     height: 25px;
     width: 25px;
     background-color: $primary-color;
@@ -57,11 +56,11 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 12.5px;
     text-align: center;
     line-height: 25px;
-
     position: absolute;
     left: 25px;
   }
 }
+
 
 header {
   height: 60px;
@@ -103,6 +102,17 @@ header {
 
 #functioning_section {
   padding: 50px 20px;
+  @for $i from 1 through 3 {
+    li:nth-child(#{$i}) {
+      @include card-info-theme('#{$i}');
+      @if $i == 3 {
+        background-color: #F5EDFF;
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
 }
 
 
