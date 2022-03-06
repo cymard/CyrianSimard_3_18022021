@@ -95,7 +95,7 @@ header {
   align-items: center;
 }
 header img {
-  width: auto;
+  width: 160px;
 }
 
 #exploration_section {
@@ -113,7 +113,7 @@ header img {
 #exploration_section label input {
   border: none;
   background-color: #EAEAEA;
-  width: 180px;
+  width: 150px;
 }
 #exploration_section div:nth-child(2) {
   background-color: #F6F6F6;

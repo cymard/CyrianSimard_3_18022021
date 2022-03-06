@@ -63,7 +63,7 @@ header {
   @include flex-center-content();
 
   img {
-    width: auto;
+    width: 160px;
   }
 }
 
@@ -82,7 +82,7 @@ header {
     input {
       border: none;
       background-color: #EAEAEA;
-      width: 180px;
+      width: 150px;
     }
   }
 
