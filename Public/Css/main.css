@@ -65,22 +65,18 @@ select {
   padding: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
-  line-height: 30px;
-}
-
 body {
   font-family: "Roboto";
 }
-
-p {
-  font-size: 18px;
-}
-
-h1, h2, h3, h4, h5, h6 {
+body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Roboto";
   font-size: 25px;
   font-weight: bold;
+  line-height: 30px;
+}
+body p {
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .btn_theme {
@@ -94,11 +90,9 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   height: 60px;
-  box-shadow: 0px 0px 5px gray;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3px;
 }
 header img {
   width: auto;
@@ -107,31 +101,30 @@ header img {
 #exploration_section {
   text-align: center;
 }
-#exploration_section div:first-child {
-  background-color: #EAEAEA;
-  height: 50px;
-  line-height: 50px;
+#exploration_section label {
+  display: block;
+  background: linear-gradient(1turn, #EAEAEA 92%, silver);
+  width: 100%;
+  padding: 7px;
 }
-#exploration_section div:first-child i {
+#exploration_section label i {
   padding: 10px;
 }
-#exploration_section div:first-child input {
+#exploration_section label input {
   border: none;
   background-color: #EAEAEA;
   width: 180px;
 }
 #exploration_section div:nth-child(2) {
   background-color: #F6F6F6;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 10px;
+  padding: 0 0 50px 0;
+}
+#exploration_section div:nth-child(2) h2 {
+  padding: 40px 50px 0 50px;
 }
 #exploration_section div:nth-child(2) p {
   line-height: 20px;
-  margin: 10px 0 20px 0;
+  margin: 15px 0 30px 0;
 }
 
 #functioning_section {
