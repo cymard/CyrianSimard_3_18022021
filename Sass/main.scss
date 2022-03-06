@@ -1,17 +1,17 @@
 @import '_normalizer.scss';
 @import '_theme.scss';
 
-@mixin flex-center-content($justify-value: center, $align-value: center)  {
+@mixin flex-center-content($justify-value: center, $align-value: center) {
   display: flex;
   justify-content: $justify-value;
   align-items: $align-value;
 }
 
-p,h1,h2,h3,h4,h5,h6 {
+p, h1, h2, h3, h4, h5, h6 {
   line-height: 30px;
 }
 
-p, input {
+body {
   font-family: 'Roboto';
 }
 
@@ -19,8 +19,8 @@ p {
   font-size: 18px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'roboto';
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto';
   font-size: 25px;
   font-weight: bold;
 }
@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
     left: 70px;
     color: gray;
   }
-  &:before{
+  &:before {
     content: $number;
     height: 25px;
     width: 25px;
@@ -67,6 +67,7 @@ header {
   box-shadow: 0px 0px 5px gray;
   @include flex-center-content();
   margin-bottom: 3px;
+
   img {
     width: auto;
   }
@@ -74,25 +75,30 @@ header {
 
 #exploration_section {
   text-align: center;
+
   div:first-child {
     background-color: #EAEAEA;
     height: 50px;
     line-height: 50px;
+
     i {
       padding: 10px;
     }
+
     input {
       border: none;
       background-color: #EAEAEA;
       width: 180px;
     }
   }
+
   div:nth-child(2) {
     background-color: #F6F6F6;
     height: 250px;
     @include flex-center-content();
     flex-direction: column;
     padding: 0 10px;
+
     p {
       line-height: 20px;
       margin: 10px 0 20px 0;
@@ -117,7 +123,39 @@ header {
 
 
 #menus_section {
-  background-color: green;
+  background-color: #F6F6F6;
+  padding: 50px 10px;
+
+  a {
+    position: relative;
+    display: block;
+    height: 250px;
+    width: 350px;
+    margin: 10px;
+    background-color: #FFF;
+    border-radius: 20px;
+
+    span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #99E2D0;
+      padding: 5px 15px;
+      color: green;
+      border-radius: 2px;
+    }
+
+    img {
+      width: 100%;
+      height: 190px;
+      background-color: aqua;
+      border-radius: 20px 20px 0 0;
+    }
+
+    figcaption {
+      padding: 5px;
+    }
+  }
 }
 
 footer {
