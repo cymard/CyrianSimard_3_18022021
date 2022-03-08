@@ -234,6 +234,7 @@ header img {
   display: block;
   background-color: #FFF;
   border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
 }
 #menus_section a:nth-child(1)::after {
   content: "Nouveau";
@@ -270,6 +271,7 @@ header img {
   display: block;
   background-color: #FFF;
   border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
 }
 #menus_section a:nth-child(2)::after {
   content: "Nouveau";
@@ -306,6 +308,7 @@ header img {
   display: block;
   background-color: #FFF;
   border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
 }
 #menus_section a:nth-child(3)::after {
   content: "Nouveau";
@@ -342,6 +345,7 @@ header img {
   display: block;
   background-color: #FFF;
   border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
 }
 #menus_section a:nth-child(4) img {
   width: 100%;
@@ -368,6 +372,7 @@ header img {
   display: block;
   background-color: #FFF;
   border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
 }
 #menus_section a:nth-child(5) img {
   width: 100%;
