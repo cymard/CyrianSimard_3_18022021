@@ -6,3 +6,16 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $shadow-color: #D3D3D3;
 $text-exploration-section-text-color: #383838;
+
+body {
+  font-family: 'Roboto';
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -78,33 +78,48 @@ body p {
   line-height: 30px;
 }
 
-#menus_section {
-  grid-template-rows: 1fr repeat(4, 300px);
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 10px 0;
 }
-#menus_section a:nth-child(1) img {
-  height: 230px;
+header a:first-child {
+  display: block;
+  color: #383838;
+  position: absolute;
+  left: 20px;
 }
-#menus_section a:nth-child(2) img {
-  height: 230px;
+header a:first-child i {
+  font-size: 20px;
 }
-#menus_section a:nth-child(3) img {
-  height: 230px;
+header img {
+  width: 160px;
 }
-#menus_section a:nth-child(4) img {
-  height: 230px;
-}
-#menus_section a:nth-child(5) img {
-  height: 230px;
+
+#menu_image img {
+  background-color: cyan;
 }
 
 footer {
-  grid-gap: 10px;
+  background-color: #353535;
+  color: white;
+  padding: 20px 0 30px 20px;
+  display: grid;
+  grid-gap: 5px;
 }
 footer img {
-  width: 170px;
+  margin-bottom: 10px;
+  filter: invert(1);
+  width: 100px;
 }
 footer a {
-  font-size: 20px;
+  color: white;
+}
+footer a i {
+  font-size: 15px;
+  width: 25px;
 }
 
-/*# sourceMappingURL=main_tablet.css.map */
+/*# sourceMappingURL=restaurant.css.map */

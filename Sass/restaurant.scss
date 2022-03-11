@@ -1,0 +1,35 @@
+@import '_normalizer.scss';
+@import '_theme.scss';
+
+@mixin flex-center-content($justify-value: center, $align-value: center) {
+  display: flex;
+  justify-content: $justify-value;
+  align-items: $align-value;
+}
+
+header {
+  height: 60px;
+  @include flex-center-content();
+  padding: 20px 0 10px 0;
+
+  a:first-child {
+    display: block;
+    color: $text-exploration-section-text-color;
+    position: absolute;
+    left: 20px;
+    i {
+      font-size: 20px;
+    }
+  }
+  img {
+    width: 160px;
+  }
+}
+
+#menu_image {
+  img {
+    background-color: cyan;
+  }
+}
+
+@import "footer";
