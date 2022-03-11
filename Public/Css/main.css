@@ -258,6 +258,14 @@ header img {
   background-color: aqua;
   border-radius: 20px 20px 0 0;
 }
+#menus_section a:nth-child(1) img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
 #menus_section a:nth-child(1) figcaption {
   padding: 10px 15px;
   position: relative;
@@ -297,6 +305,14 @@ header img {
   height: 170px;
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(2) img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
 }
 #menus_section a:nth-child(2) figcaption {
   padding: 10px 15px;
@@ -338,6 +354,14 @@ header img {
   background-color: aqua;
   border-radius: 20px 20px 0 0;
 }
+#menus_section a:nth-child(3) img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
 #menus_section a:nth-child(3) figcaption {
   padding: 10px 15px;
   position: relative;
@@ -368,6 +392,14 @@ header img {
   background-color: aqua;
   border-radius: 20px 20px 0 0;
 }
+#menus_section a:nth-child(4) img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
 #menus_section a:nth-child(4) figcaption {
   padding: 10px 15px;
   position: relative;
@@ -397,6 +429,14 @@ header img {
   height: 170px;
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(5) img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
 }
 #menus_section a:nth-child(5) figcaption {
   padding: 10px 15px;
