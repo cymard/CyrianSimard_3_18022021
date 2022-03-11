@@ -1,0 +1,32 @@
+@import '_normalizer.scss';
+@import '_theme.scss';
+
+@mixin card-from-menus-section ($isNew: false) {
+  img {
+    height: 230px;
+  }
+}
+
+#menus_section {
+  grid-template-rows: 1fr repeat(4, 300px);
+
+  @for $i from 1 through 5 {
+    a:nth-child(#{$i}) {
+      @if $i < 4 {
+        @include card-from-menus-section(true);
+      } @else {
+        @include card-from-menus-section();
+      }
+    }
+  }
+}
+
+footer {
+  grid-gap: 10px;
+  img {
+    width: 170px;
+  }
+  a {
+    font-size: 20px;
+  }
+}
