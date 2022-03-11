@@ -1,6 +1,6 @@
 /* Box sizing rules */
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
 *,
 *::before,
 *::after {
@@ -70,7 +70,7 @@ body {
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
 }
 body p {
@@ -105,6 +105,7 @@ header img {
   background: linear-gradient(1turn, #EAEAEA 92%, silver);
   width: 100%;
   padding: 7px;
+  color: #383838;
 }
 #exploration_section label i {
   padding: 10px;
@@ -124,6 +125,8 @@ header img {
 #exploration_section div:nth-child(2) p {
   line-height: 20px;
   margin: 15px 0 30px 0;
+  font-weight: 300;
+  color: #383838;
 }
 
 #functioning_section h2 {
@@ -149,6 +152,7 @@ header img {
 #functioning_section li:nth-child(1) i {
   padding: 0 30px;
   color: gray;
+  font-size: 20px;
 }
 #functioning_section li:nth-child(1):before {
   content: "1";
@@ -174,6 +178,7 @@ header img {
 #functioning_section li:nth-child(2) i {
   padding: 0 30px;
   color: gray;
+  font-size: 20px;
 }
 #functioning_section li:nth-child(2):before {
   content: "2";
@@ -200,6 +205,7 @@ header img {
 #functioning_section li:nth-child(3) i {
   padding: 0 30px;
   color: gray;
+  font-size: 20px;
 }
 #functioning_section li:nth-child(3):before {
   content: "3";
@@ -260,6 +266,9 @@ header img {
 #menus_section a:nth-child(1) figcaption h3 {
   font-size: 20px;
 }
+#menus_section a:nth-child(1) figcaption p {
+  font-weight: 300;
+}
 #menus_section a:nth-child(1) figcaption i {
   position: absolute;
   top: 20px;
@@ -296,6 +305,9 @@ header img {
 }
 #menus_section a:nth-child(2) figcaption h3 {
   font-size: 20px;
+}
+#menus_section a:nth-child(2) figcaption p {
+  font-weight: 300;
 }
 #menus_section a:nth-child(2) figcaption i {
   position: absolute;
@@ -334,6 +346,9 @@ header img {
 #menus_section a:nth-child(3) figcaption h3 {
   font-size: 20px;
 }
+#menus_section a:nth-child(3) figcaption p {
+  font-weight: 300;
+}
 #menus_section a:nth-child(3) figcaption i {
   position: absolute;
   top: 20px;
@@ -361,6 +376,9 @@ header img {
 #menus_section a:nth-child(4) figcaption h3 {
   font-size: 20px;
 }
+#menus_section a:nth-child(4) figcaption p {
+  font-weight: 300;
+}
 #menus_section a:nth-child(4) figcaption i {
   position: absolute;
   top: 20px;
@@ -387,6 +405,9 @@ header img {
 }
 #menus_section a:nth-child(5) figcaption h3 {
   font-size: 20px;
+}
+#menus_section a:nth-child(5) figcaption p {
+  font-weight: 300;
 }
 #menus_section a:nth-child(5) figcaption i {
   position: absolute;
