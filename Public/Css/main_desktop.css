@@ -1,0 +1,281 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+}
+
+header img {
+  width: 200px;
+}
+
+#menus_section {
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 350px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0 20px 70px 20px;
+  grid-template-areas: "menus_section_title menus_section_title" "menus_section_card_2 menus_section_card_3" "menus_section_card_4 menus_section_card_5";
+}
+#menus_section h2 {
+  padding: 50px 0 5px 0;
+  grid-area: menus_section_title;
+}
+#menus_section a:nth-child(1) {
+  grid-area: menus_section_card_1;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(1)::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#menus_section a:nth-child(1) img {
+  width: 100%;
+  height: 280px;
+  background-color: aqua;
+  border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(1) figcaption {
+  padding: 10px 15px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(1) figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(1) figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(1) figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+#menus_section a:nth-child(2) {
+  grid-area: menus_section_card_2;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(2)::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#menus_section a:nth-child(2) img {
+  width: 100%;
+  height: 280px;
+  background-color: aqua;
+  border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(2) figcaption {
+  padding: 10px 15px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(2) figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(2) figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(2) figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+#menus_section a:nth-child(3) {
+  grid-area: menus_section_card_3;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(3)::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#menus_section a:nth-child(3) img {
+  width: 100%;
+  height: 280px;
+  background-color: aqua;
+  border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(3) figcaption {
+  padding: 10px 15px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(3) figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(3) figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(3) figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+#menus_section a:nth-child(4) {
+  grid-area: menus_section_card_4;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(4) img {
+  width: 100%;
+  height: 280px;
+  background-color: aqua;
+  border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(4) figcaption {
+  padding: 10px 15px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(4) figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(4) figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(4) figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+#menus_section a:nth-child(5) {
+  grid-area: menus_section_card_5;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(5) img {
+  width: 100%;
+  height: 280px;
+  background-color: aqua;
+  border-radius: 20px 20px 0 0;
+}
+#menus_section a:nth-child(5) figcaption {
+  padding: 10px 15px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(5) figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(5) figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(5) figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+}
+
+footer {
+  grid-gap: 10px;
+  padding: 50px 0 30px 50px;
+}
+footer img {
+  width: 170px;
+}
+footer a {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main_desktop.css.map */
