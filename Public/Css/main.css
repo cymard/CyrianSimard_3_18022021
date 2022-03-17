@@ -237,15 +237,13 @@ header h1 {
   background-color: #F6F6F6;
   display: grid;
   grid-template-rows: 1fr repeat(4, 250px);
-  grid-template-columns: 90%;
+  grid-template-columns: 100%;
   grid-gap: 20px;
   justify-content: center;
-  padding-bottom: 70px;
-}
-#menus_section h2 {
-  padding: 50px 0 5px 0;
+  padding: 40px 20px;
 }
 #menus_section a:nth-child(1) {
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -262,13 +260,20 @@ header h1 {
   top: 15px;
   right: 15px;
 }
-#menus_section a:nth-child(1) img {
+#menus_section a:nth-child(1) article {
+  height: 100%;
+}
+#menus_section a:nth-child(1) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(1) article figure img {
   width: 100%;
-  height: 170px;
+  height: calc(100% - 80px);
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
-#menus_section a:nth-child(1) img::before {
+#menus_section a:nth-child(1) article figure img::before {
   color: black;
   display: flex;
   justify-content: center;
@@ -277,24 +282,26 @@ header h1 {
   padding: 0 10px;
   font-size: 15px;
 }
-#menus_section a:nth-child(1) figcaption {
-  padding: 10px 15px;
+#menus_section a:nth-child(1) article figure figcaption {
+  padding: 10px 0 0 10px;
+  height: 80px;
   position: relative;
   color: black;
 }
-#menus_section a:nth-child(1) figcaption h3 {
+#menus_section a:nth-child(1) article figure figcaption h3 {
   font-size: 20px;
 }
-#menus_section a:nth-child(1) figcaption p {
+#menus_section a:nth-child(1) article figure figcaption p {
   font-weight: 300;
 }
-#menus_section a:nth-child(1) figcaption i {
+#menus_section a:nth-child(1) article figure figcaption i {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 30px;
+  font-size: 23px;
 }
 #menus_section a:nth-child(2) {
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -311,13 +318,20 @@ header h1 {
   top: 15px;
   right: 15px;
 }
-#menus_section a:nth-child(2) img {
+#menus_section a:nth-child(2) article {
+  height: 100%;
+}
+#menus_section a:nth-child(2) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(2) article figure img {
   width: 100%;
-  height: 170px;
+  height: calc(100% - 80px);
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
-#menus_section a:nth-child(2) img::before {
+#menus_section a:nth-child(2) article figure img::before {
   color: black;
   display: flex;
   justify-content: center;
@@ -326,24 +340,26 @@ header h1 {
   padding: 0 10px;
   font-size: 15px;
 }
-#menus_section a:nth-child(2) figcaption {
-  padding: 10px 15px;
+#menus_section a:nth-child(2) article figure figcaption {
+  padding: 10px 0 0 10px;
+  height: 80px;
   position: relative;
   color: black;
 }
-#menus_section a:nth-child(2) figcaption h3 {
+#menus_section a:nth-child(2) article figure figcaption h3 {
   font-size: 20px;
 }
-#menus_section a:nth-child(2) figcaption p {
+#menus_section a:nth-child(2) article figure figcaption p {
   font-weight: 300;
 }
-#menus_section a:nth-child(2) figcaption i {
+#menus_section a:nth-child(2) article figure figcaption i {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 30px;
+  font-size: 23px;
 }
 #menus_section a:nth-child(3) {
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -360,13 +376,20 @@ header h1 {
   top: 15px;
   right: 15px;
 }
-#menus_section a:nth-child(3) img {
+#menus_section a:nth-child(3) article {
+  height: 100%;
+}
+#menus_section a:nth-child(3) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(3) article figure img {
   width: 100%;
-  height: 170px;
+  height: calc(100% - 80px);
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
-#menus_section a:nth-child(3) img::before {
+#menus_section a:nth-child(3) article figure img::before {
   color: black;
   display: flex;
   justify-content: center;
@@ -375,37 +398,46 @@ header h1 {
   padding: 0 10px;
   font-size: 15px;
 }
-#menus_section a:nth-child(3) figcaption {
-  padding: 10px 15px;
+#menus_section a:nth-child(3) article figure figcaption {
+  padding: 10px 0 0 10px;
+  height: 80px;
   position: relative;
   color: black;
 }
-#menus_section a:nth-child(3) figcaption h3 {
+#menus_section a:nth-child(3) article figure figcaption h3 {
   font-size: 20px;
 }
-#menus_section a:nth-child(3) figcaption p {
+#menus_section a:nth-child(3) article figure figcaption p {
   font-weight: 300;
 }
-#menus_section a:nth-child(3) figcaption i {
+#menus_section a:nth-child(3) article figure figcaption i {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 30px;
+  font-size: 23px;
 }
 #menus_section a:nth-child(4) {
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
 }
-#menus_section a:nth-child(4) img {
+#menus_section a:nth-child(4) article {
+  height: 100%;
+}
+#menus_section a:nth-child(4) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(4) article figure img {
   width: 100%;
-  height: 170px;
+  height: calc(100% - 80px);
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
-#menus_section a:nth-child(4) img::before {
+#menus_section a:nth-child(4) article figure img::before {
   color: black;
   display: flex;
   justify-content: center;
@@ -414,37 +446,46 @@ header h1 {
   padding: 0 10px;
   font-size: 15px;
 }
-#menus_section a:nth-child(4) figcaption {
-  padding: 10px 15px;
+#menus_section a:nth-child(4) article figure figcaption {
+  padding: 10px 0 0 10px;
+  height: 80px;
   position: relative;
   color: black;
 }
-#menus_section a:nth-child(4) figcaption h3 {
+#menus_section a:nth-child(4) article figure figcaption h3 {
   font-size: 20px;
 }
-#menus_section a:nth-child(4) figcaption p {
+#menus_section a:nth-child(4) article figure figcaption p {
   font-weight: 300;
 }
-#menus_section a:nth-child(4) figcaption i {
+#menus_section a:nth-child(4) article figure figcaption i {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 30px;
+  font-size: 23px;
 }
 #menus_section a:nth-child(5) {
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
 }
-#menus_section a:nth-child(5) img {
+#menus_section a:nth-child(5) article {
+  height: 100%;
+}
+#menus_section a:nth-child(5) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(5) article figure img {
   width: 100%;
-  height: 170px;
+  height: calc(100% - 80px);
   background-color: aqua;
   border-radius: 20px 20px 0 0;
+  object-fit: cover;
 }
-#menus_section a:nth-child(5) img::before {
+#menus_section a:nth-child(5) article figure img::before {
   color: black;
   display: flex;
   justify-content: center;
@@ -453,22 +494,23 @@ header h1 {
   padding: 0 10px;
   font-size: 15px;
 }
-#menus_section a:nth-child(5) figcaption {
-  padding: 10px 15px;
+#menus_section a:nth-child(5) article figure figcaption {
+  padding: 10px 0 0 10px;
+  height: 80px;
   position: relative;
   color: black;
 }
-#menus_section a:nth-child(5) figcaption h3 {
+#menus_section a:nth-child(5) article figure figcaption h3 {
   font-size: 20px;
 }
-#menus_section a:nth-child(5) figcaption p {
+#menus_section a:nth-child(5) article figure figcaption p {
   font-weight: 300;
 }
-#menus_section a:nth-child(5) figcaption i {
+#menus_section a:nth-child(5) article figure figcaption i {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 30px;
+  font-size: 23px;
 }
 
 footer {
