@@ -169,7 +169,8 @@ header h1 {
   text-align: center;
   line-height: 25px;
   position: absolute;
-  left: -14px;
+  left: 0;
+  transform: translateX(-50%);
 }
 #functioning_section li:nth-child(2) {
   padding: 40px;
@@ -196,7 +197,8 @@ header h1 {
   text-align: center;
   line-height: 25px;
   position: absolute;
-  left: -14px;
+  left: 0;
+  transform: translateX(-50%);
 }
 #functioning_section li:nth-child(3) {
   padding: 40px;
@@ -224,7 +226,8 @@ header h1 {
   text-align: center;
   line-height: 25px;
   position: absolute;
-  left: -14px;
+  left: 0;
+  transform: translateX(-50%);
 }
 #functioning_section li:nth-child(3) i {
   color: #9356DC;

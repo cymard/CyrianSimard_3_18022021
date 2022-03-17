@@ -30,7 +30,8 @@
     text-align: center;
     line-height: 25px;
     position: absolute;
-    left: -14px;
+    left: 0;
+    transform: translateX(-50%);
   }
 }
 @mixin card-from-menus-section ($isNew: false) {
