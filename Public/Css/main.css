@@ -520,6 +520,13 @@ footer {
   display: grid;
   grid-gap: 5px;
 }
+footer h1 {
+  width: 160px;
+  font-family: "Shrikhand";
+  font-size: 30px;
+  color: black;
+  font-weight: 100;
+}
 footer img {
   margin-bottom: 10px;
   filter: invert(1);
