@@ -95,17 +95,6 @@
       }
     }
   }
-
-
-}
-
-.btn_theme {
-  background: linear-gradient($secondary-color, $primary-color);
-  color: white;
-  padding: 13px 20px;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 0 5px 5px $shadow-color;
 }
 
 header {
@@ -151,7 +140,9 @@ header {
     color: $text-exploration-section-text-color;
   }
 
-  button{
+  .btn_theme {
+    @include btn-purple-style();
+    padding: 13px 20px;
     margin-bottom: 55px;
   }
 }

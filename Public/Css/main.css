@@ -78,15 +78,6 @@ body p {
   line-height: 30px;
 }
 
-.btn_theme {
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: white;
-  padding: 13px 20px;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 0 5px 5px #D3D3D3;
-}
-
 header {
   height: 60px;
   display: flex;
@@ -129,7 +120,13 @@ header h1 {
   font-weight: 300;
   color: #383838;
 }
-#exploration_section button {
+#exploration_section .btn_theme {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 5px 5px #D3D3D3;
+  padding: 13px 20px;
   margin-bottom: 55px;
 }
 
