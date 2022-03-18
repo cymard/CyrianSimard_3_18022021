@@ -7,41 +7,42 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>À la française</title>
         <script src="https://kit.fontawesome.com/9dd3a3cdbc.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../Css/normalizer.css">
         <link rel="stylesheet" href="../Css/restaurant.css">
     </head>
     <body>
         <header>
-            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
-            <a href="#"><img src="../xImages/logo/ohmyfood@2x.svg" alt="ohmyfood"></a>
-        </header>
-        <section id="menu_image">
+            <nav>
+                <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="#"><h1>ohmyfood</h1></a>
+            </nav>
             <img src="../Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="un repas gastronomique sur une table">
-        </section>
+        </header>
         <section id="menu_section">
-            <h1>À la française</h1>
-            <i class="fa-regular fa-heart"></i>
-            <form action="#">
+            <header>
+                <h1>À la française</h1>
+                <i class="fa-regular fa-heart"></i>
+            </header>
+            <form>
                 <fieldset>
                     <h2>ENTRÉES</h2>
                     <input type="radio" id="entree_tartare" name="entree" value="Tartare de poulpe acidulé">
                     <label for="entree_tartare">
-                        <span class="radio_title"><p>Tartare de poulpe acidulé</p></span>
-                        <p>Aux zests d'orange</p>
+                        <span class="radio_title">Tartare de poulpe acidulé</span>
+                        <span>Aux zests d'orange</span>
                         <span>25€</span>
                     </label>
 
                     <input type="radio" id="entree_velvety" name="entree" value="Velouté de légumes d'antan">
                     <label for="entree_velvety">
-                        <span class="radio_title"><p>Velouté de légumes d'antan</p></span>
-                        <p>Carotte, panais, topinambour</p>
+                        <span class="radio_title">Velouté de légumes d'antan</span>
+                        <span>Carotte, panais, topinambour</span>
                         <span>35€</span>
                     </label>
 
                     <input type="radio" id="entree_soup" name="entree" value="Soupe à l'oignon">
                     <label for="entree_soup">
-                        <span class="radio_title"><p>Soupe à l'oignon</p></span>
-                        <p>Revisitée</p>
+                        <span class="radio_title">Soupe à l'oignon</span>
+                        <span>Revisitée</span>
                         <span>20€</span>
                     </label>
                 </fieldset>
@@ -50,22 +51,22 @@
                     <h2>PLATS</h2>
                     <input type="radio" id="dish_shells" name="dish" value="Coquilles Saint-Jacques">
                     <label for="dish_shells">
-                        <span class="radio_title"><p>Coquilles Saint-Jacques</p></span>
-                        <p>Accompagnés d'une purée de panais</p>
+                        <span class="radio_title">Coquilles Saint-Jacques</span>
+                        <span>Accompagnés d'une purée de panais</span>
                         <span>40€</span>
                     </label>
 
                     <input type="radio" id="dish_duck_breast" name="dish" value="Magret de canard">
                     <label for="dish_duck_breast">
-                        <span class="radio_title"><p>Magret de canard</p></span>
-                        <p>Et parmentier de pommes de terres</p>
+                        <span class="radio_title">Magret de canard</span>
+                        <span>Et parmentier de pommes de terres</span>
                         <span>35€</span>
                     </label>
 
                     <input type="radio" id="dish_squab" name="dish" value="Pigeonneau d'Ille-et-Vilaine">
                     <label for="dish_squab">
-                        <span class="radio_title"><p>Pigeonneau d'Ille-et-Vilaine</p></span>
-                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <span class="radio_title">Pigeonneau d'Ille-et-Vilaine</span>
+                        <span>Sur son lit de gnocchis aux légumes</span>
                         <span>44€</span>
                     </label>
                 </fieldset>
@@ -74,31 +75,31 @@
                     <h2>DESSERTS</h2>
                     <input type="radio" id="dessert_violet_petals" name="dessert" value="Pétales de violettes glacés">
                     <label for="dessert_violet_petals">
-                        <span class="radio_title"><p>Pétales de violettes glacés</p></span>
-                        <p>Et purée de noisettes</p>
+                        <span class="radio_title">Pétales de violettes glacés</span>
+                        <span>Et purée de noisettes</span>
                         <span>18€</span>
                     </label>
 
                     <input type="radio" id="dessert_chocolate" name="dessert" value="Fondant au chocolat">
                     <label for="dessert_chocolate">
-                        <span class="radio_title"><p>Fondant au chocolat</p></span>
-                        <p>Revisité</p>
+                        <span class="radio_title">Fondant au chocolat</span>
+                        <span>Revisité</span>
                         <span>22€</span>
                     </label>
 
                     <input type="radio" id="dessert_millefeuille" name="dessert" value="Millefeuille croustillant">
                     <label for="dessert_millefeuille">
-                        <span class="radio_title"><p>Millefeuille croustillant</p></span>
-                        <p>Myrtilles et pâte d'amande</p>
+                        <span class="radio_title">Millefeuille croustillant</span>
+                        <span>Myrtilles et pâte d'amande</span>
                         <span>23€</span>
                     </label>
                 </fieldset>
 
-                <button type="submit">Commander</button>
+                <button class="btn_theme">Commander</button>
             </form>
         </section>
         <footer>
-            <img src="../xImages/logo/ohmyfood@2x.svg" alt="ohmyfood">
+            <a href="#"><h2>ohmyfood</h2></a>
             <a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
             <a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
             <a href="#">Mentions légales</a>
