@@ -1,5 +1,3 @@
-@import '../../themes/theme';
-
 @mixin fieldset-grid($card-number: 3, $grid-area: null) {
   fieldset {
     padding: 0 0 45px 0;

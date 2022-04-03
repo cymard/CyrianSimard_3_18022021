@@ -1,6 +1,5 @@
-@import 'utils/common/common_fonctions';
 @import 'utils/common/common_mixins';
-@import 'utils/common/common_variables';
+
 @import 'utils/restaurant/restaurant_fonctions';
 @import 'utils/restaurant/restaurant_mixins';
 @import 'utils/restaurant/restaurant_variables';
@@ -8,16 +7,11 @@
 @import 'base/normalizer';
 @import 'base/base';
 
-//@import 'components/restaurant';
 @import 'components/common/common_header_h1';
 
 @import 'pages/restaurant';
-//@import 'pages/restaurant/restaurant_tablet';
-//@import 'pages/restaurant/restaurant_desktop';
-//@import 'pages/restaurant/restaurant_full_desktop';
 
 @import 'layouts/common/common_footer';
 @import 'layouts/restaurant/restaurant_footer';
-//@import 'layouts/restaurant';
 
 @import 'themes/theme';

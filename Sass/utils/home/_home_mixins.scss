@@ -1,9 +1,4 @@
-//@import '../../themes/theme';
-@import '../common/common_variables';
-@import '../common/common_fonctions';
 @import '../common/common_mixins';
-//@import '../common/common_variables';
-//@import '../common/common_mixins';
 
 @mixin card-info-theme($number: '1') {
   padding: 0 30px;
