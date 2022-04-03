@@ -61,8 +61,17 @@
         display: block;
         padding: 10px;
 
+        .radio_title {
+          display: block;
+          @include cut-text-with-ellipsis;
+          max-width: 90%;
+        }
+
         span:nth-child(2) {
           font-weight: 300;
+          display: block;
+          @include cut-text-with-ellipsis;
+          max-width: 70%;
         }
 
         span:last-child {

@@ -205,8 +205,20 @@ section form fieldset label .menu_section_fieldset_span_container {
   display: block;
   padding: 10px;
 }
+section form fieldset label .menu_section_fieldset_span_container .radio_title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
 section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
   font-weight: 300;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
 }
 section form fieldset label .menu_section_fieldset_span_container span:last-child {
   position: absolute;
@@ -284,8 +296,20 @@ section form fieldset label .menu_section_fieldset_span_container {
   display: block;
   padding: 10px;
 }
+section form fieldset label .menu_section_fieldset_span_container .radio_title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
 section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
   font-weight: 300;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
 }
 section form fieldset label .menu_section_fieldset_span_container span:last-child {
   position: absolute;
@@ -363,8 +387,20 @@ section form fieldset label .menu_section_fieldset_span_container {
   display: block;
   padding: 10px;
 }
+section form fieldset label .menu_section_fieldset_span_container .radio_title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
 section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
   font-weight: 300;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
 }
 section form fieldset label .menu_section_fieldset_span_container span:last-child {
   position: absolute;

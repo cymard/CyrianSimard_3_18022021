@@ -14,3 +14,9 @@
   justify-content: $justify-value;
   align-items: $align-value;
 }
+
+@mixin cut-text-with-ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
