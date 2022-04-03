@@ -15,9 +15,8 @@
     }
     @media screen and (min-width: 1920px) {
       //grid-area: $grid-area;
-      //grid-template-rows: 30px repeat(3,75px);
+      grid-template-rows: 30px repeat(3,75px);
       grid-template-columns: auto;
-      grid-template-rows: 30px 75px;
       grid-template-areas: "fieldset-title" ;
     }
     h2 {

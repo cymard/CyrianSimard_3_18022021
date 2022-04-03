@@ -1,3 +1,4 @@
+// TODO à changer d'endroit
 @media screen and (min-width: 1280px) {
   h1, h2, h3, h4, h5, h6 {
     font-size: 35px;
@@ -42,6 +43,7 @@ header {
     margin: 15px 0 30px 0;
     font-weight: 300;
     color: $text-exploration-section-text-color;
+    padding: 0 10px;
   }
 
   .btn_theme {
@@ -85,14 +87,14 @@ header {
       @if $i == 3 {
         background-color: #F5EDFF;
         i {
-          @media screen and (min-width: 1280px) {
             color: $primary-color;
-          }
         }
       }
 
-      @if $i == 2 {
-        margin: 0 100px;
+      @media screen and (min-width: 1280px) {
+        @if $i == 2 {
+          margin: 0 100px;
+        }
       }
     }
   }
