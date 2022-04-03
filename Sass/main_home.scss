@@ -1,0 +1,22 @@
+//@import 'utils/common/common_variables';
+//@import 'utils/common/common_fonctions';
+//@import 'utils/common/common_mixins';
+@import 'utils/home/home_fonctions';
+@import 'utils/home/home_mixins';
+@import 'utils/home/home_variables';
+
+@import 'base/normalizer';
+@import 'base/base';
+
+//@import 'components/home';
+@import 'components/common/common_header_h1';
+
+@import 'pages/home/home';
+//@import 'pages/home/home_tablet';
+//@import 'pages/home/home_desktop';
+//@import 'pages/home/home_full_desktop';
+
+@import 'layouts/common/footer';
+//@import 'layouts/home/';
+
+@import 'themes/theme';

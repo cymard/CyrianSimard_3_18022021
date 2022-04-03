@@ -1,0 +1,379 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-size: 25px;
+  line-height: 30px;
+}
+body p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#menus_section {
+  display: grid;
+  grid-template-rows: 1fr repeat(2, 350px);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-template-areas: "menus_section_title menus_section_title" "menus_section_card_2 menus_section_card_3" "menus_section_card_4 menus_section_card_5";
+}
+#menus_section h2 {
+  grid-area: menus_section_title;
+}
+#menus_section a:nth-child(1) {
+  grid-area: menus_section_card_1;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(1)::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#menus_section a:nth-child(1) article {
+  height: 100%;
+}
+#menus_section a:nth-child(1) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(1) article figure img {
+  height: calc(100% - 80px);
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#menus_section a:nth-child(1) article figure img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+}
+#menus_section a:nth-child(1) article figure figcaption {
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(1) article figure figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(1) article figure figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(1) article figure figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 23px;
+}
+#menus_section a:nth-child(2) {
+  grid-area: menus_section_card_2;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(2)::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#menus_section a:nth-child(2) article {
+  height: 100%;
+}
+#menus_section a:nth-child(2) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(2) article figure img {
+  height: calc(100% - 80px);
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#menus_section a:nth-child(2) article figure img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+}
+#menus_section a:nth-child(2) article figure figcaption {
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(2) article figure figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(2) article figure figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(2) article figure figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 23px;
+}
+#menus_section a:nth-child(3) {
+  grid-area: menus_section_card_3;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(3)::after {
+  content: "Nouveau";
+  background-color: #99E2D0;
+  color: green;
+  border-radius: 2px;
+  padding: 5px 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#menus_section a:nth-child(3) article {
+  height: 100%;
+}
+#menus_section a:nth-child(3) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(3) article figure img {
+  height: calc(100% - 80px);
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#menus_section a:nth-child(3) article figure img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+}
+#menus_section a:nth-child(3) article figure figcaption {
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(3) article figure figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(3) article figure figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(3) article figure figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 23px;
+}
+#menus_section a:nth-child(4) {
+  grid-area: menus_section_card_4;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(4) article {
+  height: 100%;
+}
+#menus_section a:nth-child(4) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(4) article figure img {
+  height: calc(100% - 80px);
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#menus_section a:nth-child(4) article figure img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+}
+#menus_section a:nth-child(4) article figure figcaption {
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(4) article figure figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(4) article figure figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(4) article figure figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 23px;
+}
+#menus_section a:nth-child(5) {
+  grid-area: menus_section_card_5;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+}
+#menus_section a:nth-child(5) article {
+  height: 100%;
+}
+#menus_section a:nth-child(5) article figure {
+  height: 100%;
+}
+#menus_section a:nth-child(5) article figure img {
+  height: calc(100% - 80px);
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#menus_section a:nth-child(5) article figure img::before {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 15px;
+}
+#menus_section a:nth-child(5) article figure figcaption {
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  color: black;
+}
+#menus_section a:nth-child(5) article figure figcaption h3 {
+  font-size: 20px;
+}
+#menus_section a:nth-child(5) article figure figcaption p {
+  font-weight: 300;
+}
+#menus_section a:nth-child(5) article figure figcaption i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 23px;
+}
+
+footer {
+  display: grid;
+  grid-template-areas: "footer_title footer_title" "footer_link_2 footer_link_3" "footer_link_4 footer_link_5";
+  grid-gap: 20px;
+}
+footer a:nth-child(1) {
+  grid-area: footer_title;
+}
+footer a:nth-child(1) h2 {
+  font-size: 30px;
+}
+footer a:nth-child(2) {
+  font-size: 20px;
+  grid-area: footer_link_2;
+}
+footer a:nth-child(3) {
+  font-size: 20px;
+  grid-area: footer_link_3;
+}
+footer a:nth-child(4) {
+  font-size: 20px;
+  grid-area: footer_link_4;
+}
+footer a:nth-child(5) {
+  font-size: 20px;
+  grid-area: footer_link_5;
+}
+
+/*# sourceMappingURL=home_tablet.css.map */

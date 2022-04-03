@@ -1,0 +1,91 @@
+header {
+  height: 60px;
+  @include flex-center-content();
+}
+
+#exploration_section {
+  text-align: center;
+  background-color: #F6F6F6;
+
+  label {
+    display: block;
+    background: linear-gradient(1turn, #EAEAEA 92%, silver);
+    width: 100%;
+    padding: 7px;
+    color: $text-exploration-section-text-color;
+
+    i {
+      padding: 10px;
+    }
+
+    input {
+      border: none;
+      background-color: #EAEAEA;
+      width: 150px;
+    }
+  }
+
+  h2 {
+    padding: 40px 50px 0 50px;
+  }
+
+  p {
+    line-height: 20px;
+    margin: 15px 0 30px 0;
+    font-weight: 300;
+    color: $text-exploration-section-text-color;
+  }
+
+  .btn_theme {
+    @include btn-purple-style();
+    padding: 13px 20px;
+    margin-bottom: 55px;
+  }
+}
+
+#functioning_section {
+  padding: 50px 20px;
+
+  ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 20px;
+    padding: 30px 0 30px 10px;
+  }
+
+  @for $i from 1 through 3 {
+    li:nth-child(#{$i}) {
+      @include card-info-theme('#{$i}');
+      @if $i == 3 {
+        background-color: #F5EDFF;
+        i {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+#menus_section {
+  background-color: #F6F6F6;
+  display: grid;
+  grid-template-rows: auto repeat(4, 250px);
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+
+  @for $i from 1 through 5 {
+    a:nth-child(#{$i}) {
+      height: 100%;
+
+      @if $i < 4 {
+        @include card-from-menus-section(true);
+      } @else {
+        @include card-from-menus-section();
+      }
+    }
+  }
+}

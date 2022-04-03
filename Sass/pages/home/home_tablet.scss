@@ -1,11 +1,6 @@
-@import '_normalizer.scss';
-@import '_theme.scss';
-
-@mixin card-from-menus-section ($isNew: false) {
-  img {
-    height: 230px;
-  }
-}
+@import '../../base/normalizer';
+@import '../../base/base';
+@import '../../utils/home/_home_mixins.scss';
 
 #menus_section {
   display: grid;
@@ -22,7 +17,6 @@
   h2 {
     grid-area: menus_section_title;
   }
-
 
   @for $i from 1 through 5 {
     a:nth-child(#{$i}) {

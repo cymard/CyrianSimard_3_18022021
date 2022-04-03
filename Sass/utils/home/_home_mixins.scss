@@ -1,0 +1,104 @@
+//@import '../../themes/theme';
+@import '../common/common_variables';
+@import '../common/common_fonctions';
+@import '../common/common_mixins';
+//@import '../common/common_variables';
+//@import '../common/common_mixins';
+
+@mixin card-info-theme($number: '1') {
+  padding: 0 30px;
+  position: relative;
+  background-color: #F6F6F6;
+  @include flex-center-content(unset);
+  border-radius: 20px;
+  box-shadow: 0 2px 10px $shadow-color;
+  @media screen and (min-width: 1280px) {
+    padding: 40px;
+    height: 75px;
+  }
+  i {
+    width: 40px;
+    color: gray;
+    font-size: 20px;
+  }
+  &:before {
+    content: $number;
+    height: 25px;
+    width: 25px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+}
+
+@mixin card-from-menus-section($isNew: false) {
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px #ededed;
+
+  @if $isNew {
+    &::after {
+      content: 'Nouveau';
+      background-color: #99E2D0;
+      color: green;
+      border-radius: 2px;
+      padding: 5px 15px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  article {
+    height: 100%;
+
+    figure {
+      height: 100%;
+
+      img {
+        height: calc(100% - 80px);
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+
+        &::before {
+          color: black;
+          @include flex-center-content();
+          height: 100%;
+          padding: 0 10px;
+          font-size: 15px
+        }
+      }
+
+      figcaption {
+        padding: 10px;
+        height: 80px;
+        position: relative;
+        color: black;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-weight: 300;
+        }
+
+        i {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          font-size: 23px;
+        }
+      }
+    }
+  }
+}
+

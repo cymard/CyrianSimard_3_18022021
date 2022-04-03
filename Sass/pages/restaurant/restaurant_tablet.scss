@@ -1,0 +1,35 @@
+@import '../../base/normalizer';
+@import '../../base/base';
+
+header {
+  img {
+    max-height: 400px;
+  }
+}
+
+section {
+  padding: 15px 130px;
+}
+
+footer {
+  display: grid;
+  padding: 20px;
+  grid-template-areas:
+      'footer_title footer_title footer_title footer_title'
+      'footer_link_2 footer_link_3 footer_link_4 footer_link_5'
+;
+  grid-gap: 20px;
+  @for $i from 1 through 5 {
+    a:nth-child(#{$i}) {
+      @if $i == 1 {
+        grid-area: footer_title;
+        h2 {
+          font-size: 30px;
+        }
+      } @else {
+        font-size: 15px;
+        grid-area: footer_link_#{$i};
+      }
+    }
+  }
+}

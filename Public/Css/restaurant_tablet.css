@@ -66,11 +66,10 @@ select {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
 }
 body p {
@@ -78,8 +77,41 @@ body p {
   line-height: 30px;
 }
 
-body {
-  background-color: red;
+header img {
+  max-height: 400px;
+}
+
+section {
+  padding: 15px 130px;
+}
+
+footer {
+  display: grid;
+  padding: 20px;
+  grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
+  grid-gap: 20px;
+}
+footer a:nth-child(1) {
+  grid-area: footer_title;
+}
+footer a:nth-child(1) h2 {
+  font-size: 30px;
+}
+footer a:nth-child(2) {
+  font-size: 15px;
+  grid-area: footer_link_2;
+}
+footer a:nth-child(3) {
+  font-size: 15px;
+  grid-area: footer_link_3;
+}
+footer a:nth-child(4) {
+  font-size: 15px;
+  grid-area: footer_link_4;
+}
+footer a:nth-child(5) {
+  font-size: 15px;
+  grid-area: footer_link_5;
 }
 
 /*# sourceMappingURL=restaurant_tablet.css.map */

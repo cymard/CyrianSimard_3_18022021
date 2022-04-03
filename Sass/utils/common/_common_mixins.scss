@@ -1,0 +1,16 @@
+@import '../../themes/theme';
+@import './common_variables';
+
+@mixin btn-purple-style {
+  background: linear-gradient($secondary-color, $primary-color);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 5px 5px $shadow-color;
+}
+
+@mixin flex-center-content($justify-value: center, $align-value: center) {
+  display: flex;
+  justify-content: $justify-value;
+  align-items: $align-value;
+}

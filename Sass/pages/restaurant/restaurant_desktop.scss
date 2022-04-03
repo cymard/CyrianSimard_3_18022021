@@ -1,0 +1,50 @@
+@import '../../base/normalizer';
+@import '../../base/base';
+@import '../../themes/theme';
+@import '../../utils/restaurant/_restaurant_mixins.scss';
+
+//section {
+//  form {
+//    @for $i from 1 through 3 {
+//      @if $i == 1 {
+//        @include fieldset-grid(4);
+//      }@else {
+//        @include fieldset-grid();
+//      }
+//    }
+//  }
+//}
+
+header {
+  img {
+    max-height: 500px;
+  }
+}
+
+section {
+  padding: 15px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  grid-template-areas:
+      'footer_title footer_title footer_title footer_title'
+      'footer_link_2 footer_link_3 footer_link_4 footer_link_5'
+;
+  grid-gap: 20px;
+  @for $i from 1 through 5 {
+    a:nth-child(#{$i}) {
+      @if $i == 1 {
+        grid-area: footer_title;
+        h2 {
+          font-size: 30px;
+        }
+      } @else {
+        font-size: 20px;
+        grid-area: footer_link_#{$i};
+      }
+    }
+  }
+}

@@ -66,11 +66,10 @@ select {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
 }
 body p {
@@ -78,4 +77,4 @@ body p {
   line-height: 30px;
 }
 
-/*# sourceMappingURL=main_full_desktop.css.map */
+/*# sourceMappingURL=home_full_desktop.css.map */

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand:wght@100;200;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+// character font
+// website standards
+
+body {
+  font-family: 'Roboto', serif;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

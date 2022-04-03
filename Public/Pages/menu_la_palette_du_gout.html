@@ -6,16 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>La palette du goût</title>
         <script src="https://kit.fontawesome.com/9dd3a3cdbc.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../Css/restaurant.css">
-        <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1280px)" href="../Css/restaurant_tablet.css" />
-        <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../Css/restaurant_desktop.css" />
-        <link rel="stylesheet" media="screen and (min-width: 1920px)" href="../Css/restaurant_full_desktop.css" />
+        <link rel="stylesheet" href="../css/main_restaurant.css">
+        <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 1280px)" href="../css/restaurant_tablet.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1280px)" href="../css/restaurant_desktop.css" />
+        <link rel="stylesheet" media="screen and (min-width: 1920px)" href="../css/restaurant_full_desktop.css" />
     </head>
     <body>
         <header>
             <nav>
                 <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-                <a href="#"><h1>ohmyfood</h1></a>
+                <a href="menu_la_palette_du_gout.html"><h1>ohmyfood</h1></a>
             </nav>
             <img src="../Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="un repas gastronomique sur une table">
         </header>
@@ -29,23 +29,38 @@
                     <h2>ENTRÉES</h2>
                     <input type="radio" id="entree_snail" name="entree" value="Fricassée d'escargot">
                     <label for="entree_snail">
-                        <span class="radio_title">Fricassée d'escargot</span>
-                        <span>Au piment d'espelette</span>
-                        <span>25€</span>
+                        <span class="menu_section_fieldset_span_container">
+                            <span class="radio_title">Fricassée d'escargot</span>
+                            <span>Au piment d'espelette</span>
+                            <span>25€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
 
                     <input type="radio" id="entree_foie_gras_duck" name="entree" value="Foie gras de canard mi-cuit">
                     <label for="entree_foie_gras_duck">
-                        <span class="radio_title">Foie gras de canard mi-cuit</span>
-                        <span>Et ses copeaux de truffe noire</span>
-                        <span>35€</span>
+                        <span class="menu_section_fieldset_span_container">
+                             <span class="radio_title">Foie gras de canard mi-cuit</span>
+                            <span>Et ses copeaux de truffe noire</span>
+                            <span>35€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
 
                     <input type="radio" id="entree_fried_egg" name="entree" value="Oeuf au plat">
                     <label for="entree_fried_egg">
-                        <span class="radio_title">Oeuf au plat</span>
-                        <span>Assaisonné à la truffe sur lit de...</span>
-                        <span>20€</span>
+                        <span class="menu_section_fieldset_span_container">
+                            <span class="radio_title">Oeuf au plat</span>
+                            <span>Assaisonné à la truffe sur lit de...</span>
+                            <span>20€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
                 </fieldset>
 
@@ -53,23 +68,38 @@
                     <h2>PLATS</h2>
                     <input type="radio" id="dish_fillet_of_beef" name="dish" value="Filet de boeuf aux herbes">
                     <label for="dish_fillet_of_beef">
-                        <span class="radio_title">Filet de boeuf aux herbes</span>
-                        <span>Accompagné de sa ribambelle de légu...</span>
-                        <span>40€</span>
+                        <span class="menu_section_fieldset_span_container">
+                             <span class="radio_title">Filet de boeuf aux herbes</span>
+                            <span>Accompagné de sa ribambelle de légu...</span>
+                            <span>40€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
 
                     <input type="radio" id="dish_beef_tail_parmentier" name="dish" value="Parmentier de queue de boeuf">
                     <label for="dish_beef_tail_parmentier">
-                        <span class="radio_title">Parmentier de queue de boeuf</span>
-                        <span>À la truffe noire sur sa purée de panais</span>
-                        <span>35€</span>
+                        <span class="menu_section_fieldset_span_container">
+                            <span class="radio_title">Parmentier de queue de boeuf</span>
+                            <span>À la truffe noire sur sa purée de panais</span>
+                            <span>35€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
 
                     <input type="radio" id="dish_turbot_fillet" name="dish" value="Filet de turbot">
                     <label for="dish_turbot_fillet">
-                        <span class="radio_title">Filet de turbot</span>
-                        <span>Aux agrumes</span>
-                        <span>44€</span>
+                        <span class="menu_section_fieldset_span_container">
+                            <span class="radio_title">Filet de turbot</span>
+                            <span>Aux agrumes</span>
+                            <span>44€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
                 </fieldset>
 
@@ -77,23 +107,38 @@
                     <h2>DESSERTS</h2>
                     <input type="radio" id="dessert_paris_brest" name="dessert" value="Paris-Brest">
                     <label for="dessert_paris_brest">
-                        <span class="radio_title">Paris-Brest</span>
-                        <span>Revisité</span>
-                        <span>18€</span>
+                        <span class="menu_section_fieldset_span_container">
+                            <span class="radio_title">Paris-Brest</span>
+                            <span>Revisité</span>
+                            <span>18€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
 
                     <input type="radio" id="dessert_chocolate_macaroon" name="dessert" value="Macaron au chocolat d'exception">
                     <label for="dessert_chocolate_macaroon">
-                        <span class="radio_title">Macaron au chocolat d'exception</span>
-                        <span>Et glace à la vanille de madagascar</span>
-                        <span>22€</span>
+                        <span class="menu_section_fieldset_span_container">
+                             <span class="radio_title">Macaron au chocolat d'exception</span>
+                            <span>Et glace à la vanille de madagascar</span>
+                            <span>22€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
 
                     <input type="radio" id="dessert_chocolate_mousse" name="dessert" value="Mousse au chocolat">
                     <label for="dessert_chocolate_mousse">
-                        <span class="radio_title">Mousse au chocolat</span>
-                        <span>Au piment d'espelette et à la truffe noire</span>
-                        <span>23€</span>
+                        <span class="menu_section_fieldset_span_container">
+                            <span class="radio_title">Mousse au chocolat</span>
+                            <span>Au piment d'espelette et à la truffe noire</span>
+                            <span>23€</span>
+                        </span>
+                        <span class="check_effect">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
                     </label>
                 </fieldset>
 

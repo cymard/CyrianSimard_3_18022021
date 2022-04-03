@@ -66,11 +66,10 @@ select {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", serif;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-size: 25px;
-  font-weight: 700;
   line-height: 30px;
 }
 body p {
@@ -78,39 +77,85 @@ body p {
   line-height: 30px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 30px;
+header h1 {
+  width: 160px;
+  font-family: "Shrikhand";
+  font-size: 30px;
+  color: black;
+  font-weight: 100;
 }
 
-header img {
-  width: 200px;
+header {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#exploration_section {
+  text-align: center;
+  background-color: #F6F6F6;
+}
+#exploration_section label {
+  display: block;
+  background: linear-gradient(1turn, #EAEAEA 92%, silver);
+  width: 100%;
+  padding: 7px;
+  color: #383838;
+}
+#exploration_section label i {
+  padding: 10px;
+}
+#exploration_section label input {
+  border: none;
+  background-color: #EAEAEA;
+  width: 150px;
+}
+#exploration_section h2 {
+  padding: 40px 50px 0 50px;
+}
+#exploration_section p {
+  line-height: 20px;
+  margin: 15px 0 30px 0;
+  font-weight: 300;
+  color: #383838;
+}
+#exploration_section .btn_theme {
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 5px 5px #D3D3D3;
+  padding: 13px 20px;
+  margin-bottom: 55px;
 }
 
 #functioning_section {
   padding: 50px 20px;
 }
-#functioning_section h2 {
-  text-align: center;
-}
 #functioning_section ul {
   display: grid;
   justify-content: center;
-  grid-template: "card-info-theme_1 card-info-theme_2 card-info-theme_3";
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 80px);
   grid-gap: 20px;
-  padding: 30px 10px;
+  padding: 30px 0 30px 10px;
 }
 #functioning_section li:nth-child(1) {
-  grid-area: card-info-theme_1;
-  padding: 40px;
+  padding: 0 30px;
   position: relative;
   background-color: #F6F6F6;
-  height: 75px;
   display: flex;
+  justify-content: unset;
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
+}
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(1) {
+    padding: 40px;
+    height: 75px;
+  }
 }
 #functioning_section li:nth-child(1) i {
   width: 40px;
@@ -123,7 +168,7 @@ header img {
   width: 25px;
   background-color: #9356DC;
   color: white;
-  border-radius: 12.5px;
+  border-radius: 50%;
   text-align: center;
   line-height: 25px;
   position: absolute;
@@ -131,16 +176,20 @@ header img {
   transform: translateX(-50%);
 }
 #functioning_section li:nth-child(2) {
-  grid-area: card-info-theme_2;
-  padding: 40px;
+  padding: 0 30px;
   position: relative;
   background-color: #F6F6F6;
-  height: 75px;
   display: flex;
+  justify-content: unset;
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
-  margin: 0 100px;
+}
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(2) {
+    padding: 40px;
+    height: 75px;
+  }
 }
 #functioning_section li:nth-child(2) i {
   width: 40px;
@@ -153,7 +202,7 @@ header img {
   width: 25px;
   background-color: #9356DC;
   color: white;
-  border-radius: 12.5px;
+  border-radius: 50%;
   text-align: center;
   line-height: 25px;
   position: absolute;
@@ -161,16 +210,21 @@ header img {
   transform: translateX(-50%);
 }
 #functioning_section li:nth-child(3) {
-  grid-area: card-info-theme_3;
-  padding: 40px;
+  padding: 0 30px;
   position: relative;
   background-color: #F6F6F6;
-  height: 75px;
   display: flex;
+  justify-content: unset;
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
   background-color: #F5EDFF;
+}
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(3) {
+    padding: 40px;
+    height: 75px;
+  }
 }
 #functioning_section li:nth-child(3) i {
   width: 40px;
@@ -183,7 +237,7 @@ header img {
   width: 25px;
   background-color: #9356DC;
   color: white;
-  border-radius: 12.5px;
+  border-radius: 50%;
   text-align: center;
   line-height: 25px;
   position: absolute;
@@ -195,16 +249,16 @@ header img {
 }
 
 #menus_section {
-  height: 400px;
+  background-color: #F6F6F6;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "menus_section_title menus_section_title menus_section_title menus_section_title" "menus_section_card_2 menus_section_card_3 menus_section_card_4 menus_section_card_5";
-}
-#menus_section h2 {
-  grid-area: menus_section_title;
+  grid-template-rows: auto repeat(4, 250px);
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
 }
 #menus_section a:nth-child(1) {
-  grid-area: menus_section_card_1;
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -228,9 +282,7 @@ header img {
   height: 100%;
 }
 #menus_section a:nth-child(1) article figure img {
-  width: 100%;
   height: calc(100% - 80px);
-  background-color: aqua;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
@@ -244,7 +296,7 @@ header img {
   font-size: 15px;
 }
 #menus_section a:nth-child(1) article figure figcaption {
-  padding: 10px 0 0 10px;
+  padding: 10px;
   height: 80px;
   position: relative;
   color: black;
@@ -262,7 +314,7 @@ header img {
   font-size: 23px;
 }
 #menus_section a:nth-child(2) {
-  grid-area: menus_section_card_2;
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -286,9 +338,7 @@ header img {
   height: 100%;
 }
 #menus_section a:nth-child(2) article figure img {
-  width: 100%;
   height: calc(100% - 80px);
-  background-color: aqua;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
@@ -302,7 +352,7 @@ header img {
   font-size: 15px;
 }
 #menus_section a:nth-child(2) article figure figcaption {
-  padding: 10px 0 0 10px;
+  padding: 10px;
   height: 80px;
   position: relative;
   color: black;
@@ -320,7 +370,7 @@ header img {
   font-size: 23px;
 }
 #menus_section a:nth-child(3) {
-  grid-area: menus_section_card_3;
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -344,9 +394,7 @@ header img {
   height: 100%;
 }
 #menus_section a:nth-child(3) article figure img {
-  width: 100%;
   height: calc(100% - 80px);
-  background-color: aqua;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
@@ -360,7 +408,7 @@ header img {
   font-size: 15px;
 }
 #menus_section a:nth-child(3) article figure figcaption {
-  padding: 10px 0 0 10px;
+  padding: 10px;
   height: 80px;
   position: relative;
   color: black;
@@ -378,7 +426,7 @@ header img {
   font-size: 23px;
 }
 #menus_section a:nth-child(4) {
-  grid-area: menus_section_card_4;
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -392,9 +440,7 @@ header img {
   height: 100%;
 }
 #menus_section a:nth-child(4) article figure img {
-  width: 100%;
   height: calc(100% - 80px);
-  background-color: aqua;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
@@ -408,7 +454,7 @@ header img {
   font-size: 15px;
 }
 #menus_section a:nth-child(4) article figure figcaption {
-  padding: 10px 0 0 10px;
+  padding: 10px;
   height: 80px;
   position: relative;
   color: black;
@@ -426,7 +472,7 @@ header img {
   font-size: 23px;
 }
 #menus_section a:nth-child(5) {
-  grid-area: menus_section_card_5;
+  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
@@ -440,9 +486,7 @@ header img {
   height: 100%;
 }
 #menus_section a:nth-child(5) article figure img {
-  width: 100%;
   height: calc(100% - 80px);
-  background-color: aqua;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
 }
@@ -456,7 +500,7 @@ header img {
   font-size: 15px;
 }
 #menus_section a:nth-child(5) article figure figcaption {
-  padding: 10px 0 0 10px;
+  padding: 10px;
   height: 80px;
   position: relative;
   color: black;
@@ -475,31 +519,24 @@ header img {
 }
 
 footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 0 30px 20px;
   display: grid;
-  grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
-  grid-gap: 20px;
+  grid-gap: 5px;
 }
-footer a:nth-child(1) {
-  grid-area: footer_title;
-}
-footer a:nth-child(1) h2 {
-  font-size: 30px;
-}
-footer a:nth-child(2) {
+footer h2 {
+  width: 160px;
+  font-family: "Shrikhand";
   font-size: 20px;
-  grid-area: footer_link_2;
+  font-weight: 100;
 }
-footer a:nth-child(3) {
-  font-size: 20px;
-  grid-area: footer_link_3;
+footer a {
+  color: white;
 }
-footer a:nth-child(4) {
-  font-size: 20px;
-  grid-area: footer_link_4;
-}
-footer a:nth-child(5) {
-  font-size: 20px;
-  grid-area: footer_link_5;
+footer a i {
+  font-size: 15px;
+  width: 25px;
 }
 
-/*# sourceMappingURL=main_desktop.css.map */
+/*# sourceMappingURL=main_home.css.map */
