@@ -11,12 +11,13 @@
 //@import 'components/home';
 @import 'components/common/common_header_h1';
 
-@import 'pages/home/home';
+@import 'pages/home';
 //@import 'pages/home/home_tablet';
 //@import 'pages/home/home_desktop';
 //@import 'pages/home/home_full_desktop';
 
-@import 'layouts/common/footer';
+@import 'layouts/common/common_footer';
+@import 'layouts/home/home_footer';
 //@import 'layouts/home/';
 
 @import 'themes/theme';

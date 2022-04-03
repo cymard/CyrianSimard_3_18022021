@@ -11,12 +11,13 @@
 //@import 'components/restaurant';
 @import 'components/common/common_header_h1';
 
-@import 'pages/restaurant/restaurant';
+@import 'pages/restaurant';
 //@import 'pages/restaurant/restaurant_tablet';
 //@import 'pages/restaurant/restaurant_desktop';
 //@import 'pages/restaurant/restaurant_full_desktop';
 
-@import 'layouts/common/footer';
+@import 'layouts/common/common_footer';
+@import 'layouts/restaurant/restaurant_footer';
 //@import 'layouts/restaurant';
 
 @import 'themes/theme';
