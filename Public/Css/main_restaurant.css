@@ -106,6 +106,16 @@ header img {
   max-height: 250px;
   object-fit: cover;
 }
+@media screen and (min-width: 1920px) {
+  header img {
+    max-height: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header img {
+    max-height: 500px;
+  }
+}
 header img::before {
   display: flex;
   justify-content: center;
@@ -121,6 +131,16 @@ section {
   margin-top: -50px;
   border-radius: 40px 40px 0 0;
   padding: 15px;
+}
+@media screen and (min-width: 600px) {
+  section {
+    padding: 15px 130px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section {
+    padding: 15px;
+  }
 }
 section header {
   display: flex;
@@ -144,278 +164,620 @@ section form {
   display: flex;
   flex-direction: column;
 }
-section form fieldset {
-  padding: 0 0 45px 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 30px repeat(, 75px);
-  grid-gap: 20px;
-  border: none;
+@media screen and (min-width: 1920px) {
+  section form {
+    display: grid;
+    grid-template-rows: auto 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: "card-1 card-2 card-3" ". button-commander .";
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1919px) {
+  section form fieldset {
+    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px repeat(, 75px);
+    grid-gap: 20px;
+    border: none;
+  }
+}
+@media screen and (max-width: 1919px) and (min-width: 1280px) {
   section form fieldset {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 75px;
     grid-template-areas: "fieldset-title fieldset-title fieldset-title";
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1919px) and (min-width: 1920px) {
   section form fieldset {
     grid-template-columns: auto;
     grid-template-rows: 30px 75px;
     grid-template-areas: "fieldset-title";
   }
 }
-section form fieldset h2 {
-  font-weight: 500;
-  font-size: 20px;
-  position: relative;
+@media screen and (max-width: 1919px) {
+  section form fieldset h2 {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1919px) and (min-width: 1280px) {
   section form fieldset h2 {
     grid-area: fieldset-title;
   }
 }
-section form fieldset h2:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
-  background-color: #99E2D0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media screen and (max-width: 1919px) {
+  section form fieldset h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
-section form fieldset input {
-  display: none;
+@media screen and (max-width: 1919px) {
+  section form fieldset input {
+    display: none;
+  }
 }
-section form fieldset label {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 10px #D3D3D3;
+@media screen and (max-width: 1919px) {
+  section form fieldset label {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #D3D3D3;
+  }
+  section form fieldset label .radio_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  section form fieldset label .menu_section_fieldset_span_container {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  section form fieldset label .menu_section_fieldset_span_container .radio_title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+  section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
+    font-weight: 300;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  section form fieldset label .menu_section_fieldset_span_container span:last-child {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: 700;
+  }
+  section form fieldset label .check_effect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: none;
+  }
 }
-section form fieldset label .radio_title {
-  display: inline-block;
-  width: 100%;
-  font-weight: 700;
-  font-size: 20px;
+@media screen and (max-width: 1919px) {
+  section form fieldset {
+    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px repeat(3, 75px);
+    grid-gap: 20px;
+    border: none;
+  }
 }
-section form fieldset label .menu_section_fieldset_span_container {
-  position: relative;
-  display: block;
-  padding: 10px;
-}
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
-  font-weight: 300;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 70%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:last-child {
-  position: absolute;
-  right: 25px;
-  bottom: 10px;
-  font-weight: 700;
-}
-section form fieldset label .check_effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: green;
-  height: 100%;
-  width: 40px;
-  display: none;
-}
-section form fieldset {
-  padding: 0 0 45px 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 30px repeat(3, 75px);
-  grid-gap: 20px;
-  border: none;
-}
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1919px) and (min-width: 1280px) {
   section form fieldset {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 75px;
     grid-template-areas: "fieldset-title fieldset-title fieldset-title";
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1919px) and (min-width: 1920px) {
   section form fieldset {
     grid-template-columns: auto;
     grid-template-rows: 30px 75px;
     grid-template-areas: "fieldset-title";
   }
 }
-section form fieldset h2 {
-  font-weight: 500;
-  font-size: 20px;
-  position: relative;
+@media screen and (max-width: 1919px) {
+  section form fieldset h2 {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1919px) and (min-width: 1280px) {
   section form fieldset h2 {
     grid-area: fieldset-title;
   }
 }
-section form fieldset h2:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
-  background-color: #99E2D0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media screen and (max-width: 1919px) {
+  section form fieldset h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
-section form fieldset input {
-  display: none;
+@media screen and (max-width: 1919px) {
+  section form fieldset input {
+    display: none;
+  }
 }
-section form fieldset label {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 10px #D3D3D3;
+@media screen and (max-width: 1919px) {
+  section form fieldset label {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #D3D3D3;
+  }
+  section form fieldset label .radio_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  section form fieldset label .menu_section_fieldset_span_container {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  section form fieldset label .menu_section_fieldset_span_container .radio_title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+  section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
+    font-weight: 300;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  section form fieldset label .menu_section_fieldset_span_container span:last-child {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: 700;
+  }
+  section form fieldset label .check_effect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: none;
+  }
 }
-section form fieldset label .radio_title {
-  display: inline-block;
-  width: 100%;
-  font-weight: 700;
-  font-size: 20px;
+@media screen and (max-width: 1919px) {
+  section form fieldset {
+    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px repeat(3, 75px);
+    grid-gap: 20px;
+    border: none;
+  }
 }
-section form fieldset label .menu_section_fieldset_span_container {
-  position: relative;
-  display: block;
-  padding: 10px;
-}
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
-  font-weight: 300;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 70%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:last-child {
-  position: absolute;
-  right: 25px;
-  bottom: 10px;
-  font-weight: 700;
-}
-section form fieldset label .check_effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: green;
-  height: 100%;
-  width: 40px;
-  display: none;
-}
-section form fieldset {
-  padding: 0 0 45px 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 30px repeat(3, 75px);
-  grid-gap: 20px;
-  border: none;
-}
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1919px) and (min-width: 1280px) {
   section form fieldset {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 75px;
     grid-template-areas: "fieldset-title fieldset-title fieldset-title";
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (max-width: 1919px) and (min-width: 1920px) {
   section form fieldset {
     grid-template-columns: auto;
     grid-template-rows: 30px 75px;
     grid-template-areas: "fieldset-title";
   }
 }
-section form fieldset h2 {
-  font-weight: 500;
-  font-size: 20px;
-  position: relative;
+@media screen and (max-width: 1919px) {
+  section form fieldset h2 {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1919px) and (min-width: 1280px) {
   section form fieldset h2 {
     grid-area: fieldset-title;
   }
 }
-section form fieldset h2:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
-  background-color: #99E2D0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+@media screen and (max-width: 1919px) {
+  section form fieldset h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
-section form fieldset input {
-  display: none;
+@media screen and (max-width: 1919px) {
+  section form fieldset input {
+    display: none;
+  }
 }
-section form fieldset label {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 10px #D3D3D3;
+@media screen and (max-width: 1919px) {
+  section form fieldset label {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #D3D3D3;
+  }
+  section form fieldset label .radio_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  section form fieldset label .menu_section_fieldset_span_container {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  section form fieldset label .menu_section_fieldset_span_container .radio_title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+  section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
+    font-weight: 300;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  section form fieldset label .menu_section_fieldset_span_container span:last-child {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: 700;
+  }
+  section form fieldset label .check_effect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: none;
+  }
 }
-section form fieldset label .radio_title {
-  display: inline-block;
-  width: 100%;
-  font-weight: 700;
-  font-size: 20px;
+@media screen and (min-width: 1920px) {
+  section form .first_fieldset fieldset {
+    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px repeat(4, 75px);
+    grid-gap: 20px;
+    border: none;
+  }
 }
-section form fieldset label .menu_section_fieldset_span_container {
-  position: relative;
-  display: block;
-  padding: 10px;
+@media screen and (min-width: 1920px) and (min-width: 1280px) {
+  section form .first_fieldset fieldset {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 75px;
+    grid-template-areas: "fieldset-title fieldset-title fieldset-title";
+  }
 }
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
+@media screen and (min-width: 1920px) and (min-width: 1920px) {
+  section form .first_fieldset fieldset {
+    grid-template-columns: auto;
+    grid-template-rows: 30px 75px;
+    grid-template-areas: "fieldset-title";
+  }
 }
-section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
-  font-weight: 300;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 70%;
+@media screen and (min-width: 1920px) {
+  section form .first_fieldset fieldset h2 {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
 }
-section form fieldset label .menu_section_fieldset_span_container span:last-child {
-  position: absolute;
-  right: 25px;
-  bottom: 10px;
-  font-weight: 700;
+@media screen and (min-width: 1920px) and (min-width: 1280px) {
+  section form .first_fieldset fieldset h2 {
+    grid-area: fieldset-title;
+  }
 }
-section form fieldset label .check_effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: green;
-  height: 100%;
-  width: 40px;
-  display: none;
+@media screen and (min-width: 1920px) {
+  section form .first_fieldset fieldset h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .first_fieldset fieldset input {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .first_fieldset fieldset label {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #D3D3D3;
+  }
+  section form .first_fieldset fieldset label .radio_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  section form .first_fieldset fieldset label .menu_section_fieldset_span_container {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  section form .first_fieldset fieldset label .menu_section_fieldset_span_container .radio_title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+  section form .first_fieldset fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
+    font-weight: 300;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  section form .first_fieldset fieldset label .menu_section_fieldset_span_container span:last-child {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: 700;
+  }
+  section form .first_fieldset fieldset label .check_effect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .second_fieldset fieldset {
+    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px repeat(3, 75px);
+    grid-gap: 20px;
+    border: none;
+  }
+}
+@media screen and (min-width: 1920px) and (min-width: 1280px) {
+  section form .second_fieldset fieldset {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 75px;
+    grid-template-areas: "fieldset-title fieldset-title fieldset-title";
+  }
+}
+@media screen and (min-width: 1920px) and (min-width: 1920px) {
+  section form .second_fieldset fieldset {
+    grid-template-columns: auto;
+    grid-template-rows: 30px 75px;
+    grid-template-areas: "fieldset-title";
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .second_fieldset fieldset h2 {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1920px) and (min-width: 1280px) {
+  section form .second_fieldset fieldset h2 {
+    grid-area: fieldset-title;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .second_fieldset fieldset h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .second_fieldset fieldset input {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .second_fieldset fieldset label {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #D3D3D3;
+  }
+  section form .second_fieldset fieldset label .radio_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  section form .second_fieldset fieldset label .menu_section_fieldset_span_container {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  section form .second_fieldset fieldset label .menu_section_fieldset_span_container .radio_title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+  section form .second_fieldset fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
+    font-weight: 300;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  section form .second_fieldset fieldset label .menu_section_fieldset_span_container span:last-child {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: 700;
+  }
+  section form .second_fieldset fieldset label .check_effect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .third_fieldset fieldset {
+    padding: 0 0 45px 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px repeat(3, 75px);
+    grid-gap: 20px;
+    border: none;
+  }
+}
+@media screen and (min-width: 1920px) and (min-width: 1280px) {
+  section form .third_fieldset fieldset {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 75px;
+    grid-template-areas: "fieldset-title fieldset-title fieldset-title";
+  }
+}
+@media screen and (min-width: 1920px) and (min-width: 1920px) {
+  section form .third_fieldset fieldset {
+    grid-template-columns: auto;
+    grid-template-rows: 30px 75px;
+    grid-template-areas: "fieldset-title";
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .third_fieldset fieldset h2 {
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1920px) and (min-width: 1280px) {
+  section form .third_fieldset fieldset h2 {
+    grid-area: fieldset-title;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .third_fieldset fieldset h2:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 50px;
+    background-color: #99E2D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .third_fieldset fieldset input {
+    display: none;
+  }
+}
+@media screen and (min-width: 1920px) {
+  section form .third_fieldset fieldset label {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px #D3D3D3;
+  }
+  section form .third_fieldset fieldset label .radio_title {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  section form .third_fieldset fieldset label .menu_section_fieldset_span_container {
+    position: relative;
+    display: block;
+    padding: 10px;
+  }
+  section form .third_fieldset fieldset label .menu_section_fieldset_span_container .radio_title {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+  }
+  section form .third_fieldset fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
+    font-weight: 300;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+  }
+  section form .third_fieldset fieldset label .menu_section_fieldset_span_container span:last-child {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    font-weight: 700;
+  }
+  section form .third_fieldset fieldset label .check_effect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    height: 100%;
+    width: 40px;
+    display: none;
+  }
 }
 section form .btn_theme {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -428,7 +790,103 @@ section form .btn_theme {
   align-self: center;
   cursor: pointer;
 }
+@media screen and (min-width: 1920px) {
+  section form .btn_theme {
+    grid-area: button-commander;
+    justify-self: center;
+  }
+}
 
+@media screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    padding: 20px;
+    grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
+    grid-gap: 20px;
+  }
+  footer a:nth-child(1) {
+    grid-area: footer_title;
+  }
+  footer a:nth-child(1) h2 {
+    font-size: 30px;
+  }
+  footer a:nth-child(2) {
+    font-size: 15px;
+    grid-area: footer_link_2;
+  }
+  footer a:nth-child(3) {
+    font-size: 15px;
+    grid-area: footer_link_3;
+  }
+  footer a:nth-child(4) {
+    font-size: 15px;
+    grid-area: footer_link_4;
+  }
+  footer a:nth-child(5) {
+    font-size: 15px;
+    grid-area: footer_link_5;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
+    grid-gap: 20px;
+  }
+  footer a:nth-child(1) {
+    grid-area: footer_title;
+  }
+  footer a:nth-child(1) h2 {
+    font-size: 30px;
+  }
+  footer a:nth-child(2) {
+    font-size: 20px;
+    grid-area: footer_link_2;
+  }
+  footer a:nth-child(3) {
+    font-size: 20px;
+    grid-area: footer_link_3;
+  }
+  footer a:nth-child(4) {
+    font-size: 20px;
+    grid-area: footer_link_4;
+  }
+  footer a:nth-child(5) {
+    font-size: 20px;
+    grid-area: footer_link_5;
+  }
+}
+@media screen and (min-width: 1920px) {
+  footer {
+    display: grid;
+    grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
+    grid-gap: 20px;
+  }
+  footer a:nth-child(1) {
+    grid-area: footer_title;
+  }
+  footer a:nth-child(1) h2 {
+    font-size: 30px;
+  }
+  footer a:nth-child(2) {
+    font-size: 20px;
+    grid-area: footer_link_2;
+  }
+  footer a:nth-child(3) {
+    font-size: 20px;
+    grid-area: footer_link_3;
+  }
+  footer a:nth-child(4) {
+    font-size: 20px;
+    grid-area: footer_link_4;
+  }
+  footer a:nth-child(5) {
+    font-size: 20px;
+    grid-area: footer_link_5;
+  }
+}
 footer {
   background-color: #353535;
   color: white;

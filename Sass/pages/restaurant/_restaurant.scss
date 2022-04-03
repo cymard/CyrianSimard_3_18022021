@@ -19,6 +19,12 @@ header {
 
   img {
     max-height: 250px;
+    @media screen and (min-width: 1920px) {
+      max-height: 400px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-height: 500px;
+    }
     object-fit: cover;
     &::before {
       @include flex-center-content();
@@ -35,6 +41,12 @@ section {
   margin-top: -50px;
   border-radius: 40px 40px 0 0;
   padding: 15px;
+  @media screen and (min-width: 600px) {
+    padding: 15px 130px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 15px;
+  }
 
   header {
     @include flex-center-content(space-between);
@@ -55,12 +67,38 @@ section {
     padding: 30px 0 55px 0;
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1920px) {
+      display: grid;
+      grid-template-rows: auto 100px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      grid-template-areas:
+        "card-1 card-2 card-3"
+        ". button-commander ."
+      ;
+    }
 
-    @for $i from 1 through 3 {
-      @if $i == 1 {
-        @include fieldset-grid(null,4);
-      }@else {
-        @include fieldset-grid();
+    @media screen and (max-width: 1919px) {
+      @for $i from 1 through 3 {
+        @if $i == 1 {
+          @include fieldset-grid(null,4);
+        }@else {
+          @include fieldset-grid();
+        }
+      }
+    }
+
+    @media screen and (min-width: 1920px) {
+      .first_fieldset {
+        @include fieldset-grid(4);
+      }
+
+      .second_fieldset {
+        @include fieldset-grid(3);
+      }
+
+      .third_fieldset {
+        @include fieldset-grid(3);
       }
     }
 
@@ -70,6 +108,85 @@ section {
       width: 180px;
       align-self: center;
       cursor: pointer;
+      @media screen and (min-width: 1920px) {
+        grid-area: button-commander;
+        justify-self: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    padding: 20px;
+    grid-template-areas:
+      'footer_title footer_title footer_title footer_title'
+      'footer_link_2 footer_link_3 footer_link_4 footer_link_5'
+  ;
+    grid-gap: 20px;
+    @for $i from 1 through 5 {
+      a:nth-child(#{$i}) {
+        @if $i == 1 {
+          grid-area: footer_title;
+          h2 {
+            font-size: 30px;
+          }
+        } @else {
+          font-size: 15px;
+          grid-area: footer_link_#{$i};
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    grid-template-areas:
+      'footer_title footer_title footer_title footer_title'
+      'footer_link_2 footer_link_3 footer_link_4 footer_link_5'
+  ;
+    grid-gap: 20px;
+    @for $i from 1 through 5 {
+      a:nth-child(#{$i}) {
+        @if $i == 1 {
+          grid-area: footer_title;
+          h2 {
+            font-size: 30px;
+          }
+        } @else {
+          font-size: 20px;
+          grid-area: footer_link_#{$i};
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  footer {
+    display: grid;
+    grid-template-areas:
+      'footer_title footer_title footer_title footer_title'
+      'footer_link_2 footer_link_3 footer_link_4 footer_link_5'
+  ;
+    grid-gap: 20px;
+    @for $i from 1 through 5 {
+      a:nth-child(#{$i}) {
+        @if $i == 1 {
+          grid-area: footer_title;
+          h2 {
+            font-size: 30px;
+          }
+        } @else {
+          font-size: 20px;
+          grid-area: footer_link_#{$i};
+        }
+      }
     }
   }
 }

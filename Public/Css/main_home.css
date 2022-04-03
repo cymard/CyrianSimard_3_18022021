@@ -85,6 +85,13 @@ header h1 {
   font-weight: 100;
 }
 
+@media screen and (min-width: 1280px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
 header {
   height: 60px;
   display: flex;
@@ -133,6 +140,11 @@ header {
 #functioning_section {
   padding: 50px 20px;
 }
+@media screen and (min-width: 1280px) {
+  #functioning_section h2 {
+    text-align: center;
+  }
+}
 #functioning_section ul {
   display: grid;
   justify-content: center;
@@ -140,6 +152,12 @@ header {
   grid-template-rows: repeat(3, 80px);
   grid-gap: 20px;
   padding: 30px 0 30px 10px;
+}
+@media screen and (min-width: 1280px) {
+  #functioning_section ul {
+    grid-template: "card-info-theme_1 card-info-theme_2 card-info-theme_3";
+    padding: 30px 10px;
+  }
 }
 #functioning_section li:nth-child(1) {
   padding: 0 30px;
@@ -175,6 +193,11 @@ header {
   left: 0;
   transform: translateX(-50%);
 }
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(1) {
+    grid-area: card-info-theme_1;
+  }
+}
 #functioning_section li:nth-child(2) {
   padding: 0 30px;
   position: relative;
@@ -184,6 +207,7 @@ header {
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
+  margin: 0 100px;
 }
 @media screen and (min-width: 1280px) {
   #functioning_section li:nth-child(2) {
@@ -208,6 +232,11 @@ header {
   position: absolute;
   left: 0;
   transform: translateX(-50%);
+}
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(2) {
+    grid-area: card-info-theme_2;
+  }
 }
 #functioning_section li:nth-child(3) {
   padding: 0 30px;
@@ -244,8 +273,15 @@ header {
   left: 0;
   transform: translateX(-50%);
 }
-#functioning_section li:nth-child(3) i {
-  color: #9356DC;
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(3) {
+    grid-area: card-info-theme_3;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #functioning_section li:nth-child(3) i {
+    color: #9356DC;
+  }
 }
 
 #menus_section {
@@ -257,13 +293,34 @@ header {
   justify-content: center;
   padding: 40px 20px;
 }
+@media screen and (min-width: 600px) {
+  #menus_section {
+    grid-template-rows: 1fr repeat(2, 350px);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "menus_section_title menus_section_title" "menus_section_card_2 menus_section_card_3" "menus_section_card_4 menus_section_card_5";
+  }
+  #menus_section h2 {
+    grid-area: menus_section_title;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #menus_section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "menus_section_title menus_section_title menus_section_title menus_section_title" "menus_section_card_2 menus_section_card_3 menus_section_card_4 menus_section_card_5";
+  }
+}
 #menus_section a:nth-child(1) {
-  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
+}
+@media screen and (min-width: 600px) {
+  #menus_section a:nth-child(1) {
+    grid-area: menus_section_card_1;
+  }
 }
 #menus_section a:nth-child(1)::after {
   content: "Nouveau";
@@ -314,12 +371,16 @@ header {
   font-size: 23px;
 }
 #menus_section a:nth-child(2) {
-  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
+}
+@media screen and (min-width: 600px) {
+  #menus_section a:nth-child(2) {
+    grid-area: menus_section_card_2;
+  }
 }
 #menus_section a:nth-child(2)::after {
   content: "Nouveau";
@@ -370,12 +431,16 @@ header {
   font-size: 23px;
 }
 #menus_section a:nth-child(3) {
-  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
+}
+@media screen and (min-width: 600px) {
+  #menus_section a:nth-child(3) {
+    grid-area: menus_section_card_3;
+  }
 }
 #menus_section a:nth-child(3)::after {
   content: "Nouveau";
@@ -426,12 +491,16 @@ header {
   font-size: 23px;
 }
 #menus_section a:nth-child(4) {
-  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
+}
+@media screen and (min-width: 600px) {
+  #menus_section a:nth-child(4) {
+    grid-area: menus_section_card_4;
+  }
 }
 #menus_section a:nth-child(4) article {
   height: 100%;
@@ -472,12 +541,16 @@ header {
   font-size: 23px;
 }
 #menus_section a:nth-child(5) {
-  height: 100%;
   position: relative;
   display: block;
   background-color: #FFF;
   border-radius: 20px;
   box-shadow: 0 5px 5px #ededed;
+}
+@media screen and (min-width: 600px) {
+  #menus_section a:nth-child(5) {
+    grid-area: menus_section_card_5;
+  }
 }
 #menus_section a:nth-child(5) article {
   height: 100%;
@@ -518,6 +591,64 @@ header {
   font-size: 23px;
 }
 
+@media screen and (min-width: 600px) {
+  footer {
+    display: grid;
+    grid-template-areas: "footer_title footer_title" "footer_link_2 footer_link_3" "footer_link_4 footer_link_5";
+    grid-gap: 20px;
+  }
+  footer a:nth-child(1) {
+    grid-area: footer_title;
+  }
+  footer a:nth-child(1) h2 {
+    font-size: 30px;
+  }
+  footer a:nth-child(2) {
+    font-size: 20px;
+    grid-area: footer_link_2;
+  }
+  footer a:nth-child(3) {
+    font-size: 20px;
+    grid-area: footer_link_3;
+  }
+  footer a:nth-child(4) {
+    font-size: 20px;
+    grid-area: footer_link_4;
+  }
+  footer a:nth-child(5) {
+    font-size: 20px;
+    grid-area: footer_link_5;
+  }
+}
+@media screen and (min-width: 1280px) {
+  footer {
+    display: grid;
+    grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
+    grid-gap: 20px;
+  }
+  footer a:nth-child(1) {
+    grid-area: footer_title;
+  }
+  footer a:nth-child(1) h2 {
+    font-size: 30px;
+  }
+  footer a:nth-child(2) {
+    font-size: 20px;
+    grid-area: footer_link_2;
+  }
+  footer a:nth-child(3) {
+    font-size: 20px;
+    grid-area: footer_link_3;
+  }
+  footer a:nth-child(4) {
+    font-size: 20px;
+    grid-area: footer_link_4;
+  }
+  footer a:nth-child(5) {
+    font-size: 20px;
+    grid-area: footer_link_5;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
