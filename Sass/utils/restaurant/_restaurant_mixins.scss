@@ -1,5 +1,10 @@
-@mixin fieldset-grid($card-number: 3, $grid-area: null) {
-  fieldset {
+@mixin fieldset-grid($card-number: 3) {
+    @keyframes menu_animation {
+      from {opacity: 0;}
+      to {opacity: 100%;}
+    }
+    animation-name: menu_animation;
+    animation-iteration-count: 1;
     padding: 0 0 45px 0;
     display: grid;
     grid-template-columns: auto;
@@ -12,7 +17,6 @@
       grid-template-areas: "fieldset-title fieldset-title fieldset-title" ;
     }
     @media screen and (min-width: 1920px) {
-      //grid-area: $grid-area;
       grid-template-rows: 30px repeat(3,75px);
       grid-template-columns: auto;
       grid-template-areas: "fieldset-title" ;
@@ -90,5 +94,4 @@
       }
 
     }
-  }
 }
