@@ -294,6 +294,10 @@ section form .btn_theme {
   align-self: center;
   cursor: pointer;
 }
+section form .btn_theme:hover {
+  background: linear-gradient(#ff92e0, #a872e3);
+  box-shadow: 0 5px 5px #acacac;
+}
 @media screen and (min-width: 1920px) {
   section form .btn_theme {
     grid-area: button-commander;

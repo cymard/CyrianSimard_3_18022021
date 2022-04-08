@@ -175,6 +175,10 @@ header {
   padding: 13px 20px;
   margin-bottom: 55px;
 }
+#exploration_section .btn_theme:hover {
+  background: linear-gradient(#ff92e0, #a872e3);
+  box-shadow: 0 5px 5px #acacac;
+}
 
 #functioning_section {
   padding: 50px 20px;
