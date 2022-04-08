@@ -365,6 +365,19 @@ header {
   right: 20px;
   font-size: 23px;
 }
+#menus_section a:nth-child(1) article figure figcaption .empty_heart {
+  z-index: 1;
+}
+#menus_section a:nth-child(1) article figure figcaption .filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+#menus_section a:nth-child(1) article figure figcaption .filled_heart:hover {
+  opacity: 1;
+}
 #menus_section a:nth-child(2) {
   position: relative;
   display: block;
@@ -424,6 +437,19 @@ header {
   top: 20px;
   right: 20px;
   font-size: 23px;
+}
+#menus_section a:nth-child(2) article figure figcaption .empty_heart {
+  z-index: 1;
+}
+#menus_section a:nth-child(2) article figure figcaption .filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+#menus_section a:nth-child(2) article figure figcaption .filled_heart:hover {
+  opacity: 1;
 }
 #menus_section a:nth-child(3) {
   position: relative;
@@ -485,6 +511,19 @@ header {
   right: 20px;
   font-size: 23px;
 }
+#menus_section a:nth-child(3) article figure figcaption .empty_heart {
+  z-index: 1;
+}
+#menus_section a:nth-child(3) article figure figcaption .filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+#menus_section a:nth-child(3) article figure figcaption .filled_heart:hover {
+  opacity: 1;
+}
 #menus_section a:nth-child(4) {
   position: relative;
   display: block;
@@ -535,6 +574,19 @@ header {
   right: 20px;
   font-size: 23px;
 }
+#menus_section a:nth-child(4) article figure figcaption .empty_heart {
+  z-index: 1;
+}
+#menus_section a:nth-child(4) article figure figcaption .filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+#menus_section a:nth-child(4) article figure figcaption .filled_heart:hover {
+  opacity: 1;
+}
 #menus_section a:nth-child(5) {
   position: relative;
   display: block;
@@ -584,6 +636,19 @@ header {
   top: 20px;
   right: 20px;
   font-size: 23px;
+}
+#menus_section a:nth-child(5) article figure figcaption .empty_heart {
+  z-index: 1;
+}
+#menus_section a:nth-child(5) article figure figcaption .filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+#menus_section a:nth-child(5) article figure figcaption .filled_heart:hover {
+  opacity: 1;
 }
 
 footer {

@@ -57,11 +57,20 @@ section {
       font-size: 30px;
       width: 300px;
     }
+
     i {
       width: 50px;
       text-align: end;
       font-size: 22px;
+      //transition: color;
+      //transition-property: color;
+      //transition-duration: 1s;
+      //
+      //&:hover {
+      //  color: red;
+      //}
     }
+
   }
   form {
     padding: 30px 0 55px 0;
