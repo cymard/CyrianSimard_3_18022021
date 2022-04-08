@@ -85,6 +85,51 @@ header h1 {
   font-weight: 100;
 }
 
+#spinner_section {
+  height: 0;
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: display_spinner_animation;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(1, 0, 0.69, 0.03);
+}
+#spinner_section i {
+  color: #9356DC;
+  font-size: 100px;
+  opacity: 0;
+  animation: 3s linear 0s 1 normal spinner_animation, 3s cubic-bezier(1, 0, 1, -0.04) 0s 1 normal hide_spinner_animation;
+}
+@keyframes spinner_animation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(980deg);
+  }
+}
+@keyframes hide_spinner_animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes display_spinner_animation {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0;
+  }
+}
 header {
   height: 60px;
   display: flex;
