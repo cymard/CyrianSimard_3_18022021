@@ -232,24 +232,24 @@ section form fieldset label {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 10px #D3D3D3;
+  position: relative;
+}
+section form fieldset label:hover .check_effect {
+  width: 30%;
 }
 section form fieldset label .radio_title {
   display: inline-block;
-  width: 100%;
+  max-width: 90%;
   font-weight: 700;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 section form fieldset label .menu_section_fieldset_span_container {
   position: relative;
   display: block;
   padding: 10px;
-}
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
 }
 section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
   font-weight: 300;
@@ -267,12 +267,23 @@ section form fieldset label .menu_section_fieldset_span_container span:last-chil
 }
 section form fieldset label .check_effect {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 0;
-  background-color: green;
+  background-color: #99E2D0;
   height: 100%;
-  width: 40px;
-  display: none;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  transition-property: width;
+  transition-duration: 4s;
+}
+section form fieldset label .check_effect i {
+  color: white;
+}
+section form fieldset label .check_effect:hover {
+  width: 60px;
 }
 section form .first_fieldset {
   animation-duration: 2s;
