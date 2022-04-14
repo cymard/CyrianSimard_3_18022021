@@ -8,7 +8,7 @@ header {
       position: absolute;
       left: 20px;
       i {
-        font-size: 20px;
+        font-size: 23px;
       }
     }
 
@@ -59,9 +59,10 @@ section {
     }
 
     i {
-      width: 50px;
-      text-align: end;
       font-size: 22px;
+      position: absolute;
+      top: 50px;
+      right: 50px;
     }
 
   }

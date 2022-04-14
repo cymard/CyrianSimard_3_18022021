@@ -1,14 +1,5 @@
 @mixin fieldset-grid($card-number: 3) {
-  @keyframes menu_animation {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  animation-name: menu_animation;
-  animation-iteration-count: 1;
+
   padding: 0 0 45px 0;
   display: grid;
   grid-template-columns: auto;
@@ -54,14 +45,10 @@
     border-radius: 15px;
     box-shadow: 0 2px 10px #D3D3D3;
     position: relative;
-
-    &:hover .check_effect {
-      width: 30%;
-    }
+    display: flex;
 
     .radio_title {
       display: inline-block;
-      //width: 100%;
       max-width: 90%;
       font-weight: 700;
       font-size: 20px;
@@ -72,12 +59,7 @@
       position: relative;
       display: block;
       padding: 10px;
-
-      //.radio_title {
-      //  display: block;
-      //  @include cut-text-with-ellipsis;
-      //  max-width: 90%;
-      //}
+      width: 100%;
 
       span:nth-child(2) {
         font-weight: 300;
@@ -94,10 +76,14 @@
       }
     }
 
+    &:hover .check_effect {
+      width: 30%;
+      i {
+        rotate: 360deg;
+      }
+    }
+
     .check_effect {
-      position: absolute;
-      right: 0px;
-      top: 0;
       background-color: #99E2D0;
       height: 100%;
       width: 0;
@@ -107,18 +93,19 @@
       border-radius: 0 10px 10px 0;
 
       transition-property: width;
-      transition-duration: 4s;
+      transition-duration: .5s;
 
+      overflow: hidden;
       i {
         color: white;
-      }
-
-      &:hover {
-        width: 60px;
+        transition: rotate .5s;
       }
 
     }
-
-
   }
+}
+
+@mixin show-fieldset-label-animation-value ($delay){
+  opacity: 0;
+  animation: 0.5s ease-in $delay show-fieldset-label-animation forwards;
 }

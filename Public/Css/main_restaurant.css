@@ -97,7 +97,7 @@ header nav a:first-child {
   left: 20px;
 }
 header nav a:first-child i {
-  font-size: 20px;
+  font-size: 23px;
 }
 header nav a:nth-child(2) {
   padding: 20px 0;
@@ -155,9 +155,10 @@ section header h1 {
   width: 300px;
 }
 section header i {
-  width: 50px;
-  text-align: end;
   font-size: 22px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
 }
 section form {
   padding: 30px 0 55px 0;
@@ -174,22 +175,12 @@ section form {
   }
 }
 section form fieldset {
-  animation-name: menu_animation;
-  animation-iteration-count: 1;
   padding: 0 0 45px 0;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 30px repeat(3, 75px);
   grid-gap: 20px;
   border: none;
-}
-@keyframes menu_animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 100%;
-  }
 }
 @media screen and (min-width: 1280px) {
   section form fieldset {
@@ -233,9 +224,7 @@ section form fieldset label {
   border-radius: 15px;
   box-shadow: 0 2px 10px #D3D3D3;
   position: relative;
-}
-section form fieldset label:hover .check_effect {
-  width: 30%;
+  display: flex;
 }
 section form fieldset label .radio_title {
   display: inline-block;
@@ -250,6 +239,7 @@ section form fieldset label .menu_section_fieldset_span_container {
   position: relative;
   display: block;
   padding: 10px;
+  width: 100%;
 }
 section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
   font-weight: 300;
@@ -265,10 +255,13 @@ section form fieldset label .menu_section_fieldset_span_container span:last-chil
   bottom: 10px;
   font-weight: 700;
 }
+section form fieldset label:hover .check_effect {
+  width: 30%;
+}
+section form fieldset label:hover .check_effect i {
+  rotate: 360deg;
+}
 section form fieldset label .check_effect {
-  position: absolute;
-  right: 0px;
-  top: 0;
   background-color: #99E2D0;
   height: 100%;
   width: 0;
@@ -277,13 +270,12 @@ section form fieldset label .check_effect {
   justify-content: center;
   border-radius: 0 10px 10px 0;
   transition-property: width;
-  transition-duration: 4s;
+  transition-duration: 0.5s;
+  overflow: hidden;
 }
 section form fieldset label .check_effect i {
   color: white;
-}
-section form fieldset label .check_effect:hover {
-  width: 60px;
+  transition: rotate 0.5s;
 }
 section form .first_fieldset {
   animation-duration: 2s;
@@ -398,6 +390,91 @@ footer a i {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
   }
+}
+
+.spinner_animation_context {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: 3s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
+}
+.spinner_animation_context i {
+  color: #9356DC;
+  font-size: 100px;
+  animation: 3s forwards spinner-animation;
+}
+@keyframes spinner-animation {
+  0% {
+    opacity: 1;
+    rotate: 0deg;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    rotate: 720deg;
+  }
+}
+@keyframes show-and-hide-spinner-animation {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+fieldset .fieldset_first_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3s show-fieldset-label-animation forwards;
+}
+fieldset .fieldset_second_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3.25s show-fieldset-label-animation forwards;
+}
+fieldset .fieldset_third_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3.5s show-fieldset-label-animation forwards;
+}
+fieldset .fieldset_fourth_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3.75s show-fieldset-label-animation forwards;
+}
+@keyframes show-fieldset-label-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.empty_heart {
+  z-index: 1;
+}
+
+.filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.filled_heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main_restaurant.css.map */

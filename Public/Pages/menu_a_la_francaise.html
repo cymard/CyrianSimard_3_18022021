@@ -10,6 +10,9 @@
         <link rel="stylesheet" href="../css/main_restaurant.css">
     </head>
     <body>
+        <div class="spinner_animation_context">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
         <header>
             <nav>
                 <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
@@ -20,13 +23,14 @@
         <section id="menu_section">
             <header>
                 <h1>À la française</h1>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart empty_heart"></i>
+                <i class="fa-solid fa-heart filled_heart"></i>
             </header>
             <form>
-                <fieldset class="first_fieldset">
+                <fieldset>
                     <h2>ENTRÉES</h2>
                     <input type="radio" id="entree_tartare" name="entree" value="Tartare de poulpe acidulé">
-                    <label for="entree_tartare">
+                    <label class="fieldset_first_label" for="entree_tartare">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Tartare de poulpe acidulé</span>
                             <span>Aux zests d'orange</span>
@@ -38,7 +42,7 @@
                     </label>
 
                     <input type="radio" id="entree_velvety" name="entree" value="Velouté de légumes d'antan">
-                    <label for="entree_velvety">
+                    <label class="fieldset_second_label" for="entree_velvety">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Velouté de légumes d'antan</span>
                             <span>Carotte, panais, topinambour</span>
@@ -50,7 +54,7 @@
                     </label>
 
                     <input type="radio" id="entree_soup" name="entree" value="Soupe à l'oignon">
-                    <label for="entree_soup">
+                    <label class="fieldset_third_label" for="entree_soup">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Soupe à l'oignon</span>
                             <span>Revisitée</span>
@@ -62,10 +66,10 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="second_fieldset">
+                <fieldset>
                     <h2>PLATS</h2>
                     <input type="radio" id="dish_shells" name="dish" value="Coquilles Saint-Jacques">
-                    <label for="dish_shells">
+                    <label class="fieldset_first_label" for="dish_shells">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Coquilles Saint-Jacques</span>
                             <span>Accompagnés d'une purée de panais</span>
@@ -77,7 +81,7 @@
                     </label>
 
                     <input type="radio" id="dish_duck_breast" name="dish" value="Magret de canard">
-                    <label for="dish_duck_breast">
+                    <label class="fieldset_second_label" for="dish_duck_breast">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Magret de canard</span>
                             <span>Et parmentier de pommes de terres</span>
@@ -89,7 +93,7 @@
                     </label>
 
                     <input type="radio" id="dish_squab" name="dish" value="Pigeonneau d'Ille-et-Vilaine">
-                    <label for="dish_squab">
+                    <label class="fieldset_third_label" for="dish_squab">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Pigeonneau d'Ille-et-Vilaine</span>
                             <span>Sur son lit de gnocchis aux légumes</span>
@@ -101,10 +105,10 @@
                     </label>
                 </fieldset>
 
-                <fieldset class="third_fieldset">
+                <fieldset>
                     <h2>DESSERTS</h2>
                     <input type="radio" id="dessert_violet_petals" name="dessert" value="Pétales de violettes glacés">
-                    <label for="dessert_violet_petals">
+                    <label class="fieldset_first_label" for="dessert_violet_petals">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Pétales de violettes glacés</span>
                             <span>Et purée de noisettes</span>
@@ -116,7 +120,7 @@
                     </label>
 
                     <input type="radio" id="dessert_chocolate" name="dessert" value="Fondant au chocolat">
-                    <label for="dessert_chocolate">
+                    <label class="fieldset_second_label" for="dessert_chocolate">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Fondant au chocolat</span>
                             <span>Revisité</span>
@@ -128,7 +132,7 @@
                     </label>
 
                     <input type="radio" id="dessert_millefeuille" name="dessert" value="Millefeuille croustillant">
-                    <label for="dessert_millefeuille">
+                    <label class="fieldset_third_label" for="dessert_millefeuille">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Millefeuille croustillant</span>
                             <span>Myrtilles et pâte d'amande</span>

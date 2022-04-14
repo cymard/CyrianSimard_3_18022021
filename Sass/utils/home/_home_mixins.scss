@@ -92,23 +92,6 @@
           right: 20px;
           font-size: 23px;
         }
-
-        .empty_heart{
-          z-index: 1;
-        }
-
-        .filled_heart {
-          opacity: 0;
-          z-index: 2;
-          color: $primary-color;
-
-          transition-property: opacity;
-          transition-duration: 200ms;
-          &:hover {
-            opacity: 1;
-          }
-        }
-
       }
     }
   }

@@ -9,23 +9,27 @@
         <link rel="stylesheet" href="../css/main_restaurant.css">
     </head>
     <body>
+        <div class="spinner_animation_context">
+            <i class="fa-solid fa-spinner"></i>
+        </div>
         <header>
             <nav>
                 <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
                 <a href="menu_le_delice_des_sens.html"><h1>ohmyfood</h1></a>
             </nav>
-            <img src="../Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un repas gastronomique sur une table">
+            <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="un repas gastronomique sur une table">
         </header>
         <section>
             <header>
                 <h1>Le délice des sens</h1>
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart empty_heart"></i>
+                <i class="fa-solid fa-heart filled_heart"></i>
             </header>
             <form>
                 <fieldset>
                     <h2>ENTRÉES</h2>
                     <input type="radio" id="entree_tuna_tartar" name="entree" value="Tartare de thon">
-                    <label for="entree_tuna_tartar">
+                    <label class="fieldset_first_label" for="entree_tuna_tartar">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Tartare de thon</span>
                             <span>Assaisonné au yuzu</span>
@@ -37,7 +41,7 @@
                     </label>
 
                     <input type="radio" id="entree_lobster_bite" name="entree" value="Bouchée de homard croustillant">
-                    <label for="entree_lobster_bite">
+                    <label class="fieldset_second_label" for="entree_lobster_bite">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Bouchée de homard croustillant</span>
                             <span>Et sa farandole de petits légumes</span>
@@ -49,7 +53,7 @@
                     </label>
 
                     <input type="radio" id="entree_porcini_mushrooms" name="entree" value="Velouté de cèpes">
-                    <label for="entree_porcini_mushrooms">
+                    <label class="fieldset_third_label" for="entree_porcini_mushrooms">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Velouté de cèpes</span>
                             <span>Aux truffes</span>
@@ -64,7 +68,7 @@
                 <fieldset>
                     <h2>PLATS</h2>
                     <input type="radio" id="dish_chicken_provencal_herbs" name="dish" value="Poulet rôti aux herbes de provence">
-                    <label for="dish_chicken_provencal_herbs">
+                    <label class="fieldset_first_label" for="dish_chicken_provencal_herbs">
                         <span class="menu_section_fieldset_span_container">
                             <span class="radio_title">Poulet rôti aux herbes de provence</span>
                             <span>Et sa crème de truffe</span>
@@ -76,7 +80,7 @@
                     </label>
 
                     <input type="radio" id="dish_roasted_lobster" name="dish" value="Langouste rôtie">
-                    <label for="dish_roasted_lobster">
+                    <label class="fieldset_second_label" for="dish_roasted_lobster">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Langouste rôtie</span>
                             <span>Et ses légumes de saison</span>
@@ -88,7 +92,7 @@
                     </label>
 
                     <input type="radio" id="dish_angus_prime_rib" name="dish" value="Côte de boeuf angus">
-                    <label for="dish_angus_prime_rib">
+                    <label class="fieldset_third_label" for="dish_angus_prime_rib">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Côte de boeuf angus</span>
                             <span>Et sa purée de panais</span>
@@ -103,7 +107,7 @@
                 <fieldset>
                     <h2>DESSERTS</h2>
                     <input type="radio" id="dessert_farandole_desserts" name="dessert" value="Farandole de desserts">
-                    <label for="dessert_farandole_desserts">
+                    <label class="fieldset_first_label" for="dessert_farandole_desserts">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Farandole de desserts</span>
                             <span>Du chef</span>
@@ -115,7 +119,7 @@
                     </label>
 
                     <input type="radio" id="dessert_creme_brulee" name="dessert" value="Crème brulée">
-                    <label for="dessert_creme_brulee">
+                    <label class="fieldset_second_label" for="dessert_creme_brulee">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Crème brulée</span>
                             <span>Revisitée</span>
@@ -127,7 +131,7 @@
                     </label>
 
                     <input type="radio" id="dessert_tiramisu" name="dessert" value="Tiramisu">
-                    <label for="dessert_tiramisu">
+                    <label class="fieldset_third_label" for="dessert_tiramisu">
                         <span class="menu_section_fieldset_span_container">
                              <span class="radio_title">Tiramisu</span>
                             <span>À la noisette</span>

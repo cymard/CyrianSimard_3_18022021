@@ -1,0 +1,46 @@
+.spinner_animation_context {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include flex-center-content();
+  z-index: 999;
+
+  animation: 3s cubic-bezier(1,.07,1,-0.26) forwards show-and-hide-spinner-animation;
+
+  i {
+    color: $primary-color;
+    font-size: 100px;
+    animation: 3s forwards spinner-animation;
+  }
+
+  @keyframes spinner-animation {
+    0% {
+      opacity: 1;
+      rotate: 0deg;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+      rotate: 720deg;
+    }
+  }
+
+  @keyframes show-and-hide-spinner-animation {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+}

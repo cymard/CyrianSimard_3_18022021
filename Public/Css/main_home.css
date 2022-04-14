@@ -85,44 +85,6 @@ header h1 {
   font-weight: 100;
 }
 
-#spinner_section {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: 3s cubic-bezier(1, 0, 0.69, 0.03) display_spinner_animation forwards;
-}
-#spinner_section i {
-  color: #9356DC;
-  font-size: 100px;
-  opacity: 1;
-  animation: 3s cubic-bezier(1, 0.01, 0.87, 0.3) spinner_animation forwards;
-}
-@keyframes spinner_animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes display_spinner_animation {
-  1% {
-    opacity: 1;
-    z-index: 999;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
 header {
   height: 60px;
   display: flex;
@@ -407,19 +369,6 @@ header {
   right: 20px;
   font-size: 23px;
 }
-#menus_section a:nth-child(1) article figure figcaption .empty_heart {
-  z-index: 1;
-}
-#menus_section a:nth-child(1) article figure figcaption .filled_heart {
-  opacity: 0;
-  z-index: 2;
-  color: #9356DC;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
-#menus_section a:nth-child(1) article figure figcaption .filled_heart:hover {
-  opacity: 1;
-}
 #menus_section a:nth-child(2) {
   position: relative;
   display: block;
@@ -479,19 +428,6 @@ header {
   top: 20px;
   right: 20px;
   font-size: 23px;
-}
-#menus_section a:nth-child(2) article figure figcaption .empty_heart {
-  z-index: 1;
-}
-#menus_section a:nth-child(2) article figure figcaption .filled_heart {
-  opacity: 0;
-  z-index: 2;
-  color: #9356DC;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
-#menus_section a:nth-child(2) article figure figcaption .filled_heart:hover {
-  opacity: 1;
 }
 #menus_section a:nth-child(3) {
   position: relative;
@@ -553,19 +489,6 @@ header {
   right: 20px;
   font-size: 23px;
 }
-#menus_section a:nth-child(3) article figure figcaption .empty_heart {
-  z-index: 1;
-}
-#menus_section a:nth-child(3) article figure figcaption .filled_heart {
-  opacity: 0;
-  z-index: 2;
-  color: #9356DC;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
-#menus_section a:nth-child(3) article figure figcaption .filled_heart:hover {
-  opacity: 1;
-}
 #menus_section a:nth-child(4) {
   position: relative;
   display: block;
@@ -616,19 +539,6 @@ header {
   right: 20px;
   font-size: 23px;
 }
-#menus_section a:nth-child(4) article figure figcaption .empty_heart {
-  z-index: 1;
-}
-#menus_section a:nth-child(4) article figure figcaption .filled_heart {
-  opacity: 0;
-  z-index: 2;
-  color: #9356DC;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
-#menus_section a:nth-child(4) article figure figcaption .filled_heart:hover {
-  opacity: 1;
-}
 #menus_section a:nth-child(5) {
   position: relative;
   display: block;
@@ -678,19 +588,6 @@ header {
   top: 20px;
   right: 20px;
   font-size: 23px;
-}
-#menus_section a:nth-child(5) article figure figcaption .empty_heart {
-  z-index: 1;
-}
-#menus_section a:nth-child(5) article figure figcaption .filled_heart {
-  opacity: 0;
-  z-index: 2;
-  color: #9356DC;
-  transition-property: opacity;
-  transition-duration: 200ms;
-}
-#menus_section a:nth-child(5) article figure figcaption .filled_heart:hover {
-  opacity: 1;
 }
 
 footer {
@@ -747,6 +644,66 @@ footer a i {
   footer {
     grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
   }
+}
+
+.spinner_animation_context {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: 3s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
+}
+.spinner_animation_context i {
+  color: #9356DC;
+  font-size: 100px;
+  animation: 3s forwards spinner-animation;
+}
+@keyframes spinner-animation {
+  0% {
+    opacity: 1;
+    rotate: 0deg;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    rotate: 720deg;
+  }
+}
+@keyframes show-and-hide-spinner-animation {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.empty_heart {
+  z-index: 1;
+}
+
+.filled_heart {
+  opacity: 0;
+  z-index: 2;
+  color: #9356DC;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.filled_heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main_home.css.map */
