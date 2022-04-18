@@ -1,12 +1,14 @@
-.empty_heart{
+.empty_heart {
   z-index: 1;
 }
 
 .filled_heart {
   opacity: 0;
   z-index: 2;
-  color: $primary-color;
-
+  background: radial-gradient($primary-color, #fffd00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   transition-property: opacity;
   transition-duration: 200ms;
 

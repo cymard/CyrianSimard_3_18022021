@@ -50,9 +50,11 @@ section {
 
   header {
     @include flex-center-content(space-between);
-    padding: 30px 30px 10px 0;
+    padding: 30px 0 10px 0;
+    position: relative;
+
     h1 {
-      font-family: 'Shrikhand';
+      font-family: 'Shrikhand', serif;
       font-weight: 100;
       font-size: 30px;
       width: 300px;
@@ -61,8 +63,7 @@ section {
     i {
       font-size: 22px;
       position: absolute;
-      top: 50px;
-      right: 50px;
+      right: 15px;
     }
 
   }

@@ -79,7 +79,7 @@ body p {
 
 header h1 {
   width: 160px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-size: 30px;
   color: black;
   font-weight: 100;
@@ -599,7 +599,7 @@ footer {
 }
 footer h2 {
   width: 160px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-size: 20px;
   font-weight: 100;
 }
@@ -698,7 +698,10 @@ footer a i {
 .filled_heart {
   opacity: 0;
   z-index: 2;
-  color: #9356DC;
+  background: radial-gradient(#9356DC, #fffd00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   transition-property: opacity;
   transition-duration: 200ms;
 }
