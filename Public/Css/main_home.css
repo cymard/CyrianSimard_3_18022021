@@ -675,7 +675,7 @@ footer a i {
   100% {
     opacity: 0;
     z-index: -1;
-    ransform: rotate(720deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes show-and-hide-spinner-animation {
