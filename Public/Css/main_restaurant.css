@@ -79,7 +79,7 @@ body p {
 
 header h1 {
   width: 160px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-size: 30px;
   color: black;
   font-weight: 100;
@@ -97,7 +97,7 @@ header nav a:first-child {
   left: 20px;
 }
 header nav a:first-child i {
-  font-size: 20px;
+  font-size: 23px;
 }
 header nav a:nth-child(2) {
   padding: 20px 0;
@@ -146,18 +146,19 @@ section header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 30px 10px 0;
+  padding: 30px 0 10px 0;
+  position: relative;
 }
 section header h1 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-weight: 100;
   font-size: 30px;
   width: 300px;
 }
 section header i {
-  width: 50px;
-  text-align: end;
   font-size: 22px;
+  position: absolute;
+  right: 15px;
 }
 section form {
   padding: 30px 0 55px 0;
@@ -177,97 +178,6 @@ section form fieldset {
   padding: 0 0 45px 0;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30px repeat(4, 75px);
-  grid-gap: 20px;
-  border: none;
-}
-@media screen and (min-width: 1280px) {
-  section form fieldset {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30px 75px;
-    grid-template-areas: "fieldset-title fieldset-title fieldset-title";
-  }
-}
-@media screen and (min-width: 1920px) {
-  section form fieldset {
-    grid-template-rows: 30px repeat(3, 75px);
-    grid-template-columns: auto;
-    grid-template-areas: "fieldset-title";
-  }
-}
-section form fieldset h2 {
-  font-weight: 500;
-  font-size: 20px;
-  position: relative;
-}
-@media screen and (min-width: 1280px) {
-  section form fieldset h2 {
-    grid-area: fieldset-title;
-  }
-}
-section form fieldset h2:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
-  background-color: #99E2D0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-section form fieldset input {
-  display: none;
-}
-section form fieldset label {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 10px #D3D3D3;
-}
-section form fieldset label .radio_title {
-  display: inline-block;
-  width: 100%;
-  font-weight: 700;
-  font-size: 20px;
-}
-section form fieldset label .menu_section_fieldset_span_container {
-  position: relative;
-  display: block;
-  padding: 10px;
-}
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
-  font-weight: 300;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 70%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:last-child {
-  position: absolute;
-  right: 25px;
-  bottom: 10px;
-  font-weight: 700;
-}
-section form fieldset label .check_effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: green;
-  height: 100%;
-  width: 40px;
-  display: none;
-}
-section form fieldset {
-  padding: 0 0 45px 0;
-  display: grid;
-  grid-template-columns: auto;
   grid-template-rows: 30px repeat(3, 75px);
   grid-gap: 20px;
   border: none;
@@ -313,24 +223,23 @@ section form fieldset label {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 2px 10px #D3D3D3;
+  position: relative;
+  display: flex;
 }
 section form fieldset label .radio_title {
   display: inline-block;
-  width: 100%;
+  max-width: 90%;
   font-weight: 700;
   font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 section form fieldset label .menu_section_fieldset_span_container {
   position: relative;
   display: block;
   padding: 10px;
-}
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
+  width: 100%;
 }
 section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
   font-weight: 300;
@@ -346,108 +255,38 @@ section form fieldset label .menu_section_fieldset_span_container span:last-chil
   bottom: 10px;
   font-weight: 700;
 }
+section form fieldset label:hover .check_effect {
+  width: 30%;
+}
+section form fieldset label:hover .check_effect i {
+  transform: rotate(360deg);
+}
 section form fieldset label .check_effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: green;
-  height: 100%;
-  width: 40px;
-  display: none;
-}
-section form fieldset {
-  padding: 0 0 45px 0;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 30px repeat(3, 75px);
-  grid-gap: 20px;
-  border: none;
-}
-@media screen and (min-width: 1280px) {
-  section form fieldset {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30px 75px;
-    grid-template-areas: "fieldset-title fieldset-title fieldset-title";
-  }
-}
-@media screen and (min-width: 1920px) {
-  section form fieldset {
-    grid-template-rows: 30px repeat(3, 75px);
-    grid-template-columns: auto;
-    grid-template-areas: "fieldset-title";
-  }
-}
-section form fieldset h2 {
-  font-weight: 500;
-  font-size: 20px;
-  position: relative;
-}
-@media screen and (min-width: 1280px) {
-  section form fieldset h2 {
-    grid-area: fieldset-title;
-  }
-}
-section form fieldset h2:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50px;
   background-color: #99E2D0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-section form fieldset input {
-  display: none;
-}
-section form fieldset label {
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 2px 10px #D3D3D3;
-}
-section form fieldset label .radio_title {
-  display: inline-block;
-  width: 100%;
-  font-weight: 700;
-  font-size: 20px;
-}
-section form fieldset label .menu_section_fieldset_span_container {
-  position: relative;
-  display: block;
-  padding: 10px;
-}
-section form fieldset label .menu_section_fieldset_span_container .radio_title {
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 90%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:nth-child(2) {
-  font-weight: 300;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 70%;
-}
-section form fieldset label .menu_section_fieldset_span_container span:last-child {
-  position: absolute;
-  right: 25px;
-  bottom: 10px;
-  font-weight: 700;
-}
-section form fieldset label .check_effect {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: green;
   height: 100%;
-  width: 40px;
-  display: none;
+  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  transition: width 0.5s linear;
+  overflow: hidden;
+}
+section form fieldset label .check_effect i {
+  color: white;
+  transition: transform 0.5s linear;
+}
+section form .first_fieldset {
+  animation-duration: 2s;
+}
+section form .second_fieldset {
+  animation-duration: 4s;
+}
+section form .third_fieldset {
+  animation-duration: 6s;
 }
 section form .btn_theme {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #8f45e8);
   color: white;
   border-radius: 30px;
   border: none;
@@ -456,6 +295,10 @@ section form .btn_theme {
   width: 180px;
   align-self: center;
   cursor: pointer;
+}
+section form .btn_theme:hover {
+  background: linear-gradient(#ff92e0, #a872e3);
+  box-shadow: 0 5px 5px #acacac;
 }
 @media screen and (min-width: 1920px) {
   section form .btn_theme {
@@ -473,7 +316,7 @@ footer {
 }
 footer h2 {
   width: 160px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-size: 20px;
   font-weight: 100;
 }
@@ -546,6 +389,96 @@ footer a i {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
   }
+}
+
+.spinner_animation_context {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: 3s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
+}
+.spinner_animation_context i {
+  color: #8f45e8;
+  font-size: 100px;
+  animation: 3s forwards spinner-animation;
+}
+@keyframes spinner-animation {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    ransform: rotate(720deg);
+  }
+}
+@keyframes show-and-hide-spinner-animation {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+fieldset .fieldset_first_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3s show-fieldset-label-animation forwards;
+}
+fieldset .fieldset_second_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3.25s show-fieldset-label-animation forwards;
+}
+fieldset .fieldset_third_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3.5s show-fieldset-label-animation forwards;
+}
+fieldset .fieldset_fourth_label {
+  opacity: 0;
+  animation: 0.5s ease-in 3.75s show-fieldset-label-animation forwards;
+}
+@keyframes show-fieldset-label-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.empty_heart {
+  z-index: 1;
+}
+
+.filled_heart {
+  opacity: 0;
+  z-index: 2;
+  background: radial-gradient(ellipse at bottom, #f5609a, #8f45e8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.filled_heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main_restaurant.css.map */

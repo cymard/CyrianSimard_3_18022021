@@ -1,0 +1,18 @@
+.empty_heart {
+  z-index: 1;
+}
+
+.filled_heart {
+  opacity: 0;
+  z-index: 2;
+  background: radial-gradient(ellipse at bottom, #f5609a,$primary-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition-property: opacity;
+  transition-duration: 200ms;
+
+  &:hover {
+    opacity: 1;
+  }
+}

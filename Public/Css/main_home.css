@@ -79,7 +79,7 @@ body p {
 
 header h1 {
   width: 160px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-size: 30px;
   color: black;
   font-weight: 100;
@@ -122,13 +122,17 @@ header {
   padding: 0 10px;
 }
 #exploration_section .btn_theme {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #8f45e8);
   color: white;
   border-radius: 30px;
   border: none;
   box-shadow: 0 5px 5px #D3D3D3;
   padding: 13px 20px;
   margin-bottom: 55px;
+}
+#exploration_section .btn_theme:hover {
+  background: linear-gradient(#ff92e0, #a872e3);
+  box-shadow: 0 5px 5px #acacac;
 }
 
 #functioning_section {
@@ -178,7 +182,7 @@ header {
   content: "1";
   height: 25px;
   width: 25px;
-  background-color: #9356DC;
+  background-color: #8f45e8;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -217,7 +221,7 @@ header {
   content: "2";
   height: 25px;
   width: 25px;
-  background-color: #9356DC;
+  background-color: #8f45e8;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -262,7 +266,7 @@ header {
   content: "3";
   height: 25px;
   width: 25px;
-  background-color: #9356DC;
+  background-color: #8f45e8;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -277,7 +281,7 @@ header {
   }
 }
 #functioning_section li:nth-child(3) i {
-  color: #9356DC;
+  color: #8f45e8;
 }
 #menus_section {
   background-color: #F6F6F6;
@@ -595,7 +599,7 @@ footer {
 }
 footer h2 {
   width: 160px;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", serif;
   font-size: 20px;
   font-weight: 100;
 }
@@ -640,6 +644,69 @@ footer a i {
   footer {
     grid-template-areas: "footer_title footer_title footer_title footer_title" "footer_link_2 footer_link_3 footer_link_4 footer_link_5";
   }
+}
+
+.spinner_animation_context {
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: 3s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
+}
+.spinner_animation_context i {
+  color: #8f45e8;
+  font-size: 100px;
+  animation: 3s forwards spinner-animation;
+}
+@keyframes spinner-animation {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    ransform: rotate(720deg);
+  }
+}
+@keyframes show-and-hide-spinner-animation {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.empty_heart {
+  z-index: 1;
+}
+
+.filled_heart {
+  opacity: 0;
+  z-index: 2;
+  background: radial-gradient(ellipse at bottom, #f5609a, #8f45e8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition-property: opacity;
+  transition-duration: 200ms;
+}
+.filled_heart:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main_home.css.map */

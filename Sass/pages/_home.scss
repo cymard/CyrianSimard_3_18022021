@@ -78,7 +78,7 @@ header {
       @if $i == 3 {
         background-color: #F5EDFF;
         i {
-            color: $primary-color;
+          color: $primary-color;
         }
       }
 
@@ -106,8 +106,7 @@ header {
     grid-template-areas:
       'menus_section_title menus_section_title'
       'menus_section_card_2 menus_section_card_3'
-      'menus_section_card_4 menus_section_card_5'
-  ;
+      'menus_section_card_4 menus_section_card_5';
 
     h2 {
       grid-area: menus_section_title;
@@ -119,8 +118,7 @@ header {
     grid-template-rows: 1fr;
     grid-template-areas:
       'menus_section_title menus_section_title menus_section_title menus_section_title'
-      'menus_section_card_2 menus_section_card_3 menus_section_card_4 menus_section_card_5'
-  ;
+      'menus_section_card_2 menus_section_card_3 menus_section_card_4 menus_section_card_5';
   }
 
   @for $i from 1 through 5 {

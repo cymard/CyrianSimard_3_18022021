@@ -8,7 +8,7 @@ header {
       position: absolute;
       left: 20px;
       i {
-        font-size: 20px;
+        font-size: 23px;
       }
     }
 
@@ -50,18 +50,22 @@ section {
 
   header {
     @include flex-center-content(space-between);
-    padding: 30px 30px 10px 0;
+    padding: 30px 0 10px 0;
+    position: relative;
+
     h1 {
-      font-family: 'Shrikhand';
+      font-family: 'Shrikhand', serif;
       font-weight: 100;
       font-size: 30px;
       width: 300px;
     }
+
     i {
-      width: 50px;
-      text-align: end;
       font-size: 22px;
+      position: absolute;
+      right: 15px;
     }
+
   }
   form {
     padding: 30px 0 55px 0;
@@ -78,12 +82,20 @@ section {
       ;
     }
 
-    @for $i from 1 through 3 {
-      @if $i == 1 {
-        @include fieldset-grid(4);
-      }@else {
-        @include fieldset-grid(3);
-      }
+    fieldset {
+      @include fieldset-grid();
+    }
+
+    .first_fieldset {
+      animation-duration: 2s;
+    }
+
+    .second_fieldset {
+      animation-duration: 4s;
+    }
+
+    .third_fieldset {
+      animation-duration: 6s;
     }
 
     .btn_theme {

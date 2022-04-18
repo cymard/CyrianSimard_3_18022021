@@ -1,0 +1,28 @@
+fieldset {
+  .fieldset_first_label {
+    @include show-fieldset-label-animation-value(3s)
+  }
+
+  .fieldset_second_label {
+    @include show-fieldset-label-animation-value(3.25s)
+  }
+
+  .fieldset_third_label {
+    @include show-fieldset-label-animation-value(3.5s)
+  }
+
+  .fieldset_fourth_label {
+    @include show-fieldset-label-animation-value(3.75s)
+  }
+
+  @keyframes show-fieldset-label-animation{
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}
