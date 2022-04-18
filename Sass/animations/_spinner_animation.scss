@@ -19,7 +19,7 @@
   @keyframes spinner-animation {
     0% {
       opacity: 1;
-      rotate: 0deg;
+      transform: rotate(0deg);
     }
     90% {
       opacity: 1;
@@ -27,7 +27,7 @@
     100% {
       opacity: 0;
       z-index: -1;
-      rotate: 720deg;
+      ransform: rotate(720deg);
     }
   }
 

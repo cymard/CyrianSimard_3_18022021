@@ -269,8 +269,7 @@ section form fieldset label .check_effect {
   align-items: center;
   justify-content: center;
   border-radius: 0 10px 10px 0;
-  transition-property: width;
-  transition-duration: 0.5s;
+  transition: width 0.5s linear;
   overflow: hidden;
 }
 section form fieldset label .check_effect i {
@@ -287,7 +286,7 @@ section form .third_fieldset {
   animation-duration: 6s;
 }
 section form .btn_theme {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #8f45e8);
   color: white;
   border-radius: 30px;
   border: none;
@@ -406,14 +405,14 @@ footer a i {
   animation: 3s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
 }
 .spinner_animation_context i {
-  color: #9356DC;
+  color: #8f45e8;
   font-size: 100px;
   animation: 3s forwards spinner-animation;
 }
 @keyframes spinner-animation {
   0% {
     opacity: 1;
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   90% {
     opacity: 1;
@@ -421,7 +420,7 @@ footer a i {
   100% {
     opacity: 0;
     z-index: -1;
-    rotate: 720deg;
+    ransform: rotate(720deg);
   }
 }
 @keyframes show-and-hide-spinner-animation {
@@ -456,9 +455,11 @@ fieldset .fieldset_fourth_label {
 @keyframes show-fieldset-label-animation {
   0% {
     opacity: 0;
+    transform: translateY(5px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 
@@ -469,7 +470,7 @@ fieldset .fieldset_fourth_label {
 .filled_heart {
   opacity: 0;
   z-index: 2;
-  background: radial-gradient(#9356DC, #fffd00);
+  background: radial-gradient(ellipse at bottom, #f5609a, #8f45e8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

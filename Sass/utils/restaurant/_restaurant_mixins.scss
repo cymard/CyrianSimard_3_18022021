@@ -92,16 +92,13 @@
       justify-content: center;
       border-radius: 0 10px 10px 0;
 
-      transition-property: width;
-      transition-duration: .5s;
+      transition: width .5s linear;
 
       overflow: hidden;
       i {
         color: white;
         transition: transform 0.5s linear;
-        //transition: rotate .5s;
       }
-
     }
   }
 }
