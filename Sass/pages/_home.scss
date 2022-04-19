@@ -62,7 +62,9 @@ header {
     padding: 30px 0 30px 10px;
 
     @media screen and (min-width: 1280px) {
-      grid-template: 'card-info-theme_1 card-info-theme_2 card-info-theme_3';
+      grid-template-columns: unset;
+      grid-template-rows: unset;
+      grid-template-areas: 'card-info-theme_1 card-info-theme_2 card-info-theme_3';
       padding: 30px 10px;
     }
   }
