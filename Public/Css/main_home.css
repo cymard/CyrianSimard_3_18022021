@@ -169,12 +169,6 @@ header {
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
 }
-#functioning_section li:nth-child(1):hover {
-  background-color: #F5EDFF;
-}
-#functioning_section li:nth-child(1):hover i {
-  color: #8f45e8;
-}
 @media screen and (min-width: 1280px) {
   #functioning_section li:nth-child(1) {
     padding: 40px;
@@ -213,12 +207,6 @@ header {
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
-}
-#functioning_section li:nth-child(2):hover {
-  background-color: #F5EDFF;
-}
-#functioning_section li:nth-child(2):hover i {
-  color: #8f45e8;
 }
 @media screen and (min-width: 1280px) {
   #functioning_section li:nth-child(2) {
@@ -263,12 +251,7 @@ header {
   align-items: center;
   border-radius: 20px;
   box-shadow: 0 2px 10px #D3D3D3;
-}
-#functioning_section li:nth-child(3):hover {
   background-color: #F5EDFF;
-}
-#functioning_section li:nth-child(3):hover i {
-  color: #8f45e8;
 }
 @media screen and (min-width: 1280px) {
   #functioning_section li:nth-child(3) {
@@ -298,6 +281,9 @@ header {
   #functioning_section li:nth-child(3) {
     grid-area: card-info-theme_3;
   }
+}
+#functioning_section li:nth-child(3) i {
+  color: #8f45e8;
 }
 #menus_section {
   background-color: #F6F6F6;
@@ -673,12 +659,12 @@ footer a i {
   justify-content: center;
   align-items: center;
   z-index: 999;
-  animation: 4s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
+  animation: 3s cubic-bezier(1, 0.07, 1, -0.26) forwards show-and-hide-spinner-animation;
 }
 .spinner_animation_context i {
   color: #8f45e8;
   font-size: 100px;
-  animation: 4s forwards spinner-animation;
+  animation: 3s forwards spinner-animation;
 }
 @keyframes spinner-animation {
   0% {
@@ -691,7 +677,7 @@ footer a i {
   100% {
     opacity: 0;
     z-index: -1;
-    transform: rotate(1200deg);
+    transform: rotate(720deg);
   }
 }
 @keyframes show-and-hide-spinner-animation {
