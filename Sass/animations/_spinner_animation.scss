@@ -8,12 +8,12 @@
   @include flex-center-content();
   z-index: 999;
 
-  animation: 3s cubic-bezier(1,.07,1,-0.26) forwards show-and-hide-spinner-animation;
+  animation: 4s cubic-bezier(1,.07,1,-0.26) forwards show-and-hide-spinner-animation;
 
   i {
     color: $primary-color;
     font-size: 100px;
-    animation: 3s forwards spinner-animation;
+    animation: 4s forwards spinner-animation;
   }
 
   @keyframes spinner-animation {
@@ -27,7 +27,7 @@
     100% {
       opacity: 0;
       z-index: -1;
-      transform: rotate(720deg);
+      transform: rotate(1200deg);
     }
   }
 
